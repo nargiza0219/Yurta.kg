@@ -1,0 +1,309 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    // .identifying-header {
+    //     display: none;
+    // }
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    @media (max-width: 425px) {
+        padding: 0 20px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 20px;
+    }
+
+    @media (max-width: 960px) {
+        padding: 0 20px;
+    }
+
+    @media (max-width: 1241px) {
+        padding: 0 40px;
+    }
+
+    @media (max-width: 320px) {
+        margin: 0 auto;
+    }
+}
+
+.sign-up {
+    &__header {
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        @media (max-width: 425px) {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+}
+
+.signup-body {
+    &__wrapper {
+        margin-top: 190px;
+        margin-left: 150px;
+
+        @media (max-width:1024px) {
+            margin-left: 86px;
+        }
+
+        @media (max-width: 768px) {
+            margin-top: 390px;
+        }
+        @media (max-width: 425px) {
+            margin-left: 0;
+        }
+    }
+
+    &__img {
+        content: url(../img/mail.svg);
+        position: absolute;
+        right: 130px;
+        top: 235px;
+
+        @media (max-width:1024px) {
+            right: 6px;
+        }
+
+        @media (max-width: 768px) {
+            right: 250px;
+            top: 130px;
+            height: 50%;
+        }
+        @media (max-width: 425px) {
+            right: 55px;
+            top: 130px;
+            height: 50%;
+        }
+
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: .27px;
+        color: #3e416d;
+        margin-top: 50px;
+
+        @media (max-width: 425px) {
+            font-size: 30px;
+        }
+        @media (max-width: 375px) {
+            font-size: 20px;
+        }
+    }
+
+    &__input {
+        border-radius: 7px;
+        padding: 25px;
+        width: 50%;
+
+        font-size: 14px;
+        border: none;
+        box-shadow: 0 0 10px -3px rgb(223, 219, 219);
+        position: relative;
+
+        @media (max-width:1024px) {
+            width: 59%;
+        }
+
+       
+        @media (max-width: 768px) {
+            padding: 20px;
+            width: 85%;
+
+        }
+         @media (max-width: 425px) {
+            padding: 18px;
+            width: 100%;
+            font-size: 14px;
+        }
+
+    }
+
+    &__btn {
+        position: absolute;
+        top: 327px;
+        left: 537px;
+        background: #6950ab;
+        color: #fff;
+        padding: 13px;
+        width: 15%;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        border: none;
+
+        @media (max-width:1024px) {
+            left: 460px;
+        }
+
+
+
+        @media (max-width: 768px) {
+            top: 523px;
+            left: 507px;
+            padding: 12px;
+            font-size: 14px;
+
+        }
+
+        @media (max-width: 425px) {
+            padding: 17px;
+            width: 80%;
+            font-size: 15px;
+            top: 626px;
+            left: 40px;
+
+        }
+
+        // @media (max-width: 320px) {
+        //     padding: 10px;
+        //     width: 28%;
+
+        // }
+
+        
+    }
+
+    &__or {
+        width: 100%;
+        color: #3e416d;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+        @media (max-width: 768px) {
+            margin-top: 38px;
+        }
+
+        @media (max-width: 425px) {
+            margin-top: 150px;
+        }
+    }
+
+    &__or::before {
+        position: absolute;
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 176px;
+        top: 9px;
+        border-bottom: 1px solid #d7d8dd;
+        left: 0;
+        @media (max-width: 425px) {
+            width: 70px;
+            left: 10px;
+        }
+
+    }
+
+    &__or::after {
+        position: absolute;
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 176px;
+        padding-top: 20px;
+        border-bottom: 1px solid #d7d8dd;
+        right: 15px;
+        top: -11px;
+        @media (max-width: 425px) {
+            width: 70px;
+            right: 0;
+        }
+    }
+
+    &__media-btns {
+        position: relative;
+        max-width: 500px;
+    }
+
+    &__facebook {
+        border-radius: 8px;
+        padding: 17px 35px;
+        // width: 25%;
+        color: #3e416d;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        position: relative;
+        cursor: pointer;
+        text-decoration: none;
+        border: 1px solid #2f80ed;
+        position: relative;
+        margin-right: 20px;
+
+        @media (max-width: 425px) {
+            padding: 17px 96px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 36px;
+            padding: 12px 45px;
+            font-size: 16px;
+        }
+
+        &::before {
+            content: url('../img/iconmonstr-facebook.svg');
+            position: absolute;
+            top: 15px;
+            left: 14px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &__google {
+        border-radius: 8px;
+        padding: 17px 35px;
+        // width: 25%;
+        color: #3e416d;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        position: relative;
+        cursor: pointer;
+        text-decoration: none;
+        border: 1px solid #eb5757;
+        position: relative;
+
+        @media (max-width: 425px) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 36px;
+            padding: 12px 45px;
+            font-size: 16px;
+        }
+
+        &::before {
+            content: url('../img/google-icon.svg');
+            position: absolute;
+            top: 15px;
+            left: 14px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

@@ -1,0 +1,270 @@
+.subscribe {
+    color: $font-color;
+    padding: 20px;
+
+    &__wrapper {
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    &__title {
+        font-size: 34px;
+        font-weight: 900;
+        margin-top: 65px;
+
+        @media(max-width: 425px) {
+            font-size: 24px;
+        }
+    }
+
+    &__image {
+        @media (max-width: 767px) {
+            width: 316px;
+        }
+
+        @media (max-width: 424px) {
+            width: 300px;
+        }
+
+        @media (max-width: 374px) {
+            width: 240px;
+        }
+    }
+
+    &__buttons {
+        padding-top: 62px;
+
+        .button {
+            width: 250px;
+            background: #6950ab;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: .27px;
+            padding: 18px 18px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin: 0 15px;
+
+            @media (max-width: 767px) {
+                width: 75%;
+                margin: 8px auto;
+            }
+
+            @media (max-width: 375px) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__content {
+        max-height: 135px;
+        overflow: hidden;
+    }
+
+    &__sub-title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        padding-top: 31px;
+    }
+
+    &__text {
+        margin: 25px 0;
+        line-height: 1.5;
+    }
+
+    .toggle-btns {
+        border: none;
+        outline: none;
+        color: #94b4ba;
+        padding: 32px 0;
+        background-color: #ffffff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    &__less-btn {
+        display: none;
+    }
+
+    .popup {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100000;
+        display: none;
+        align-items: center;
+        justify-content: center;
+
+        &__overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            opacity: .3;
+            background-color: #000;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        &__inner {
+            max-width: 1120px;
+            width: 100%;
+            position: relative;
+            left: 433px;
+            top: 10px;
+            padding: 40px 95px;
+            background-color: #ffffff;
+            max-height: 100%;
+            min-height: 40vh;
+            border-radius: 5px;
+
+
+            @media (max-width: 425px) {
+                margin: 0;
+                width: 100%;
+                max-width: 316px;
+                position: absolute;
+                padding: 20px 5px 20px;
+                top: 0;
+                border-radius: 0;
+            }
+
+            @media (max-width: 1023px) {
+                margin: 0;
+                width: 100%;
+                max-width: 720px;
+                position: absolute;
+                padding: 70px 40px 20px;
+                top: 0;
+                left: 0;
+                border-radius: 0;
+            }
+
+            @media (max-width: 1439px) {
+                padding: 40px;
+                width: 100%;
+                max-width: 960px;
+            }
+
+            &__close-btn {
+                position: absolute;
+                right: 16px;
+                top: 16px;
+
+                .close-icon {
+                    cursor: pointer;
+                }
+            }
+
+            &__content {
+                @media (max-width: 1023px) {
+                    height: 100%;
+                }
+
+                img {
+                    @media (max-width: 374px) {
+                        width: 240px;
+                    }
+                }
+            }
+        }
+
+        .get-subscribed__popup {
+            padding: 32px 32px 28px;
+
+            &__title {
+                text-align: start;
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 1.14;
+                margin: 40px 0 16px;
+            }
+
+            &__text {
+                text-align: start;
+                font-size: 16px;
+                line-height: 1.5;
+                margin: 12px 0;
+            }
+
+            .auth-email-request__body__form {
+                margin-top: 0;
+
+                .input-with-btn-inline {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    .form-input-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 12px;
+
+                        .form-input {
+                            box-shadow: 0 1px 3px 1px rgba(160, 161, 188, .15);
+                            border-radius: 8px;
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            background-color: #fff;
+
+                            &__input {
+                                padding: 14px 0;
+                                margin: 0 100px 0 18px;
+                                width: 100%;
+                                height: 100%;
+                                background-color: #fff;
+                                border-radius: 7px;
+                                font-size: 14px;
+                                border: none;
+                                outline: none;
+                            }
+                        }
+                    }
+
+                    .button-custom {
+                        padding: 14px 24px;
+                        border-radius: 8px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        height: 44px;
+                        text-align: center;
+                        background: #6950ab;
+                        color: #fff;
+                        cursor: pointer;
+                        border: none;
+                        margin: 0;
+                        width: auto;
+                        outline: none;
+                    }
+                }
+            }
+
+            @media (max-width: 1023px) {
+                // top: 25%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            @media (max-width: 1920px) {
+                max-width: 500px;
+            }
+        }
+
+        .active {
+            display: flex;
+        }
+
+        @media (max-width: 1023px) {
+            position: fixed;
+            align-items: start;
+            z-index: 10000;
+        }
+    }
+}

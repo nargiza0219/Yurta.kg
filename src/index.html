@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slider.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__main-nav">
+        <img class="header__logo" src="img/logo.svg" alt="logo" />
+        <img class="header__mobile-logo" src="img/logoMobile.svg" alt="logo" hidden />
+        <ul class="header__nav-bar">
+          <li class="header__link">
+            <a class="active-item" href="buy.html">купить</a>
+          </li>
+          <li class="header__link">
+            <a href="rent.html">арендовать</a>
+          </li>
+          <li class="header__link">
+            <a href="#">объявление</a>
+          </li>
+          <li class="header__link">
+            <a href="#">блог</a>
+          </li>
+          <li class="header__link">
+            <a href="signup.html" class="join-btn">Войти</a>
+          </li>
+        </ul>
+        <div class="header__burger-btn" hidden>
+          <img class="open-burger-menu" src="img/burgerIcon.svg" alt="burger button">
+          <img class="close-burger-menu" src="img/closeIcon.svg" alt="close Icon" hidden>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--header-->
+  <section class="burger-inner">
+    <div class="container">
+      <h2 class="identifying-header">burger menu</h2>
+      <div class="mobile-menu">
+        <div class="join-btn-wrapper">
+          <img src="img/avatar.svg" alt="avatar" class="avatar">
+          <a class="mob-join-btn" href="signUp.html">войти</a>
+        </div>
+        <ul class="mobile-nav-bar">
+          <li class="mobile-link home">
+            <a href="#">главная</a>
+            <img src="img/homeIcon.svg" alt="home icon" class="home-icon">
+          </li>
+          <li class="mobile-link">
+            <a href="buy.html">купить</a>
+          </li>
+          <li class="mobile-link">
+            <a href="rent.html">арендовать</a>
+          </li>
+          <li class="mobile-link sell">
+            <a href="#">объявление</a>
+          </li>
+          <li class="mobile-link">
+            <a href="#">блог</a>
+          </li>
+          <li class="mobile-link about">
+            <a href="#">о нас</a>
+          </li>
+          <li class="mobile-link">
+            <a href="#">помощь</a>
+          </li>
+          <li class="mobile-link">
+            <a href="#">test</a>
+          </li>
+          <li class="mobile-link">
+            <a href="#">test</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!--burger-inner-->
+  <section class="banner">
+    <div class="container">
+      <div class="banner__inner">
+        <div class="banner__img">
+          <h2 class="banner__slogan">Lorem ipsum dolor sit amet</h2>
+          <button id="myBtn" class="searchbtn">ПЕРЕЙТИ К ПОИСКУ</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- banner img -->
+  <section class="desktop-filter">
+    <div class="container">
+      <h2 class="identifying-header">filter</h2>
+      <form action="#" class="desktop-filter__form">
+        <div class="desktop-filter__wrapper">
+          <button type="button" class="left-borr"></button>
+          <select id="year">
+            <option value="hide">Купить</option>
+            <option value="Купить">Купить</option>
+            <option value="Снять">Снять</option>
+          </select>
+          <select>
+            <option value="hide">Город</option>
+            <option value="2010">Бишкек</option>
+            <option value="2011">Талас</option>
+            <option value="2012">Нарын</option>
+            <option value="2013">Ош</option>
+            <option value="2014">Жалал-Абад</option>
+            <option value="2015">Баткен</option>
+            <option value="2015">Ыссык-Көл</option>
+          </select>
+          <select>
+            <option value="hide">Тип невижимости</option>
+            <option value="2010">Частный дом</option>
+            <option value="2011">Квартира</option>
+            <option value="2012">Склад</option>
+            <option value="2013">Гараж</option>
+            <option value="2014">Участок</option>
+          </select>
+          <select>
+            <option value="hide">Кол-во комнат</option>
+            <option value="2010">1</option>
+            <option value="2011">2</option>
+            <option value="2012">3</option>
+            <option value="2013">4</option>
+            <option value="2014">5</option>
+            <option value="2015">6</option>
+          </select>
+          <input type="text" placeholder="Цена от" class="input-1">
+          <input type="text" placeholder="Цена до" class="input-1">
+          <select>
+            <option value="hide">$</option>
+            <option value="2010">$</option>
+            <option value="2011">Сом</option>
+          </select>
+          <button type="submit" class="submit-btn">
+            <img src="img/search-symbol.svg" alt="search symbol">
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- desktop filter -->
+
+  <section class="mobile-filter">
+    <div class="container">
+      <div id="myModal" class="mobile-filter__modal">
+        <div class="mobile-filter__modal--content">
+          <div class="mobile-filter__modal--header">
+            <span class="mobile-filter__close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="close-icon">
+                <g fill="none" fill-rule="evenodd">
+                  <path fill="#523A84"
+                    d="M7.339 5.4L12 10.059l4.661-4.66a1.375 1.375 0 0 1 1.94 0 1.374 1.374 0 0 1 0 1.939l-4.662 4.659 4.661 4.66A1.374 1.374 0 0 1 17.63 19c-.355 0-.694-.13-.969-.404L12 13.936l-4.661 4.66a1.319 1.319 0 0 1-.97.404c-.355 0-.71-.13-.97-.404a1.374 1.374 0 0 1 0-1.938l4.661-4.661L5.4 7.338a1.374 1.374 0 0 1 0-1.938 1.375 1.375 0 0 1 1.939 0z">
+                  </path>
+                </g>
+              </svg>
+            </span>
+            <div class="mobile-filter__only-video">
+              <h3 class="mobile-filter__video--title">Объявления с видео</h3>
+              <label class="mobile-filter__switch">
+                <input type="checkbox" class="mobile-filter__checkbox">
+                <span class="mobile-filter__slider--round"></span>
+              </label>
+            </div>
+          </div>
+          <form action="#" id="mob-filter">
+            <h3 class="mobile-filter__bussines--type">Тип недвижимости</h3>
+            <div class="mobile-filter__modal--body">
+              <!-- 1 fotka -->
+              <div class="mobile-filter__type--svg" id="filter-focus">
+                <input type="radio" id="filter-btn" class="filter-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="140" height="60" viewBox="0 0 50 50">
+                  <g fill="none" fill-rule="evenodd">
+                    <path fill="#E4D8F0"
+                      d="M13.402 26.107c.396.38.788 1.12.963 1.677.285-.774.637-1.436 1.406-2.028.715-.551 1.871-.911 3.004-1.337a10.725 10.725 0 0 0-3.901-.753c-1.829 0-3.551.457-5.063 1.255 1.213-.002 2.692.328 3.59 1.186M8.078 33.014c0-2.136-.207-4.927-.207-6.978C5.713 28.023 4 31.376 4 34.54c0 .853.109 1.68.293 2.475h3.812c-1.5-.774-1.505-3.205-.027-4.001M41.84 26.626c.19-.807.304-1.646.304-2.513 0-6.006-4.87-10.874-10.875-10.874-4.264 0-7.946 2.461-9.729 6.035 1.859-1.412 4.461-1.458 5.08 1.575.125.608.07 1.224-.095 1.829.297-.037.55-.067.682-.072 1.038-.033 2.058-.158 3.1-.127 1.555.045 3.004 1.937 1.944 3.39-.03.038-.068.078-.1.116 1.423.004 2.975-.306 3.723-.61 1.5-.61 2.705.897 2.85 2.172.292 2.562.986 8.43.687 9.47h6.958c.067-.488.114-.981.114-1.488 0-3.684-1.838-6.935-4.643-8.903" />
+                    <path fill="#6950AB" d="M29.674 32.197h5.29v-3.67h-5.29zM12.228 32.197h5.29v-3.67h-5.29z" />
+                    <path fill="#E4D8F0" d="M7.872 34.258h2.123v-7.792H7.872z" />
+                    <path fill="#E4D8F0"
+                      d="M9.413 28.087h29.298v-1.62H9.413zM7.162 35.977h13.613v-1.982H7.162zM26.096 35.977H39.71v-1.982H26.096z" />
+                    <path fill="#6950AB" d="M39.827 34.258H38.59v-7.172H8.605v7.172H7.367v-8.41h32.46z" />
+                    <path fill="#6950AB"
+                      d="M35.72 16.129H11.474L6.101 27.09h12.465l5.032-7.939 5.031 7.939h12.464zM20.459 33.414H7.215c-.615 0-1.114.498-1.114 1.113v1.376c0 .615.499 1.113 1.114 1.113H20.46c.615 0 1.113-.498 1.113-1.113v-1.376c0-.615-.498-1.113-1.113-1.113zm-13.12 2.363h12.995v-1.125H7.339v1.125zM39.57 33.414H26.237c-.602 0-1.089.488-1.089 1.09v1.422c0 .603.487 1.09 1.089 1.09H39.57c.601 0 1.09-.487 1.09-1.09v-1.423a1.09 1.09 0 0 0-1.09-1.089zm-13.184 2.363h13.035v-1.125H26.386v1.125z" />
+                    <path fill="#6950AB"
+                      d="M20.395 37.015h5.943v-8.489h-5.943v8.489zm1.238-1.237H25.1v-6.012h-3.467v6.012z" />
+                  </g>
+                </svg>
+                <p class="mobile-filter__types--name">lorem</p>
+              </div>
+              <!-- 2 fotka -->
+              <div class="mobile-filter__type--svg" id="filter-focus2">
+                <input type="radio" id="filter-btn2" class="filter-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140"
+                  height="60" viewBox="0 0 50 50">
+                  <defs>
+                    <path d="M1.046.137h8.106v15.69H1.046z" />
+                    <path d="M0 1.154h26.938v12.237H0z" />
+                  </defs>
+                  <g fill="none" fill-rule="evenodd">
+                    <g transform="translate(35.303 22.9)">
+                      <mask fill="#fff">
+                        <use xlink:href="#a" />
+                      </mask>
+                      <path fill="#E4D8F0"
+                        d="M4.666.137v15.072H1.158V6.485h-.112v9.341h6.21a11.786 11.786 0 0 0 1.896-6.42c0-3.763-1.757-7.107-4.486-9.27"
+                        mask="url(#b)" />
+                    </g>
+                    <g transform="translate(5 25.335)">
+                      <mask fill="#fff">
+                        <use xlink:href="#c" />
+                      </mask>
+                      <path fill="#E4D8F0"
+                        d="M26.938 4.05h-.065v8.724h-21.5V1.154A11.81 11.81 0 0 0 .23 13.391h26.707v-9.34z"
+                        mask="url(#d)" />
+                    </g>
+                    <path fill="#E4D8F0"
+                      d="M10.83 19.584h28.683v-2.137H10.829zM10.83 37.916h21.037V35.78H10.829zM36.455 37.916h3.507V35.78h-3.507z" />
+                    <path fill="#E4D8F0" d="M10.366 38.109h2.127V17.057h-2.127z" />
+                    <path fill="#6950AB"
+                      d="M31.867 25.781h4.588v-4.609h-4.588zM22.862 33.993h4.588v-4.608h-4.588zM13.872 25.781h4.589v-4.609h-4.59zM22.876 25.781h4.59v-4.609h-4.59zM13.872 33.993h4.589v-4.608h-4.59z" />
+                    <path fill="#6950AB"
+                      d="M37.06 37.5h2.297V17.666H10.972V37.5h20.289v-8.115c0-.336.27-.609.606-.609h4.588c.334 0 .606.273.606.609V37.5zm2.903 1.217h-3.508a.608.608 0 0 1-.606-.608v-8.116h-3.376v8.116a.608.608 0 0 1-.606.608h-21.5a.607.607 0 0 1-.607-.608V17.057c0-.336.27-.608.606-.608h29.597c.334 0 .606.272.606.608V38.11a.608.608 0 0 1-.606.608z" />
+                    <path fill="#6950AB"
+                      d="M25.163 11l-16.93 3.813v2.965h33.861v-2.965zM31.867 38.717h4.588V37.5h-4.588z" />
+                    <path fill="#6950AB"
+                      d="M10.972 37.5h20.289v-1.303H10.972V37.5zm20.895 1.217h-21.5a.607.607 0 0 1-.607-.608v-2.52c0-.338.27-.61.606-.61h21.5c.335 0 .607.272.607.61v2.52a.608.608 0 0 1-.606.608zM37.06 37.5h2.296v-1.303h-2.295V37.5zm2.902 1.217h-3.507a.608.608 0 0 1-.607-.608v-2.52c0-.338.272-.61.607-.61h3.507c.335 0 .606.272.606.61v2.52a.608.608 0 0 1-.606.608z" />
+                    <path fill="#6950AB" d="M32 33h1v2h-1z" />
+                  </g>
+                </svg>
+                <div class="mobile-filter__types--name">lorem</div>
+              </div>
+              <!-- 3 fotka -->
+              <div class="mobile-filter__type--svg" id="filter-focus3">
+                <input type="radio" id="filter-btn3" class="filter-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="140" height="60" viewBox="0 0 50 50">
+                  <g fill="none" fill-rule="nonzero">
+                    <path fill="#E3D7EF"
+                      d="M26.47 37.05c.14-.19.3-.37.43-.57-3.21-.09-6.42-.3-9.63-.2-1.08.48-2.64-.04-2.64-1.58V21.12C10.76 22.6 8 26.35 8 30.75c0 2.37.81 4.55 2.16 6.3h16.31zM32.57 13.25c-3.7 0-6.94 1.95-8.76 4.88h13.6c1.02 0 1.58.69 1.71 1.47.08.17.14.35.16.56.49 3.85 0 7.67-.34 11.52 2.4-1.89 3.95-4.8 3.95-8.09 0-5.72-4.62-10.34-10.32-10.34z" />
+                    <path fill="#E3D7EF"
+                      d="M15.11 19.55h23.66v1.75H15.11zM15.11 34.61h2.37v1.75h-2.37zM21.41 34.61h3.63v1.75h-3.63zM28.83 34.61h3.63v1.75h-3.63zM36.25 34.61h2.89v1.75h-2.89z" />
+                    <path fill="#E3D7EF"
+                      d="M14.73 19.23h1.75v17.29h-1.75zM17.71 29.35h1.23v7.17h-1.23zM25.05 29.35h1.23v7.17h-1.23zM32.39 29.35h1.23v7.17h-1.23z" />
+                    <path fill="#6950AA"
+                      d="M32.47 22.61h3.79v3.79h-3.79zM17.62 22.61h3.79v3.79h-3.79zM25.05 22.61h3.79v3.79h-3.79z" />
+                    <path fill="#6950AA"
+                      d="M39.15 37.02h-2.89c-.28 0-.5-.22-.5-.5v-6.67h-2.79v6.67c0 .28-.22.5-.5.5H14.73c-.28 0-.5-.22-.5-.5V19.23c0-.28.22-.5.5-.5h24.42c.28 0 .5.22.5.5v17.29c0 .28-.23.5-.5.5zm-2.4-1h1.89V19.73H15.23v16.29h16.74v-6.67c0-.28.22-.5.5-.5h3.79c.28 0 .5.22.5.5v6.67h-.01z" />
+                    <path fill="#6950AA"
+                      d="M28.82 37.02h-3.79c-.28 0-.5-.22-.5-.5v-7.17c0-.28.22-.5.5-.5h3.79c.28 0 .5.22.5.5v7.17c0 .28-.22.5-.5.5zm-3.28-1h2.79v-6.17h-2.79v6.17zM21.41 37.02h-3.79c-.28 0-.5-.22-.5-.5v-7.17c0-.28.22-.5.5-.5h3.79c.28 0 .5.22.5.5v7.17c0 .28-.23.5-.5.5zm-3.29-1h2.79v-6.17h-2.79v6.17zM32.47 36.02h3.79v1h-3.79z" />
+                    <path fill="#6950AA"
+                      d="M32.47 37.02h-3.64c-.28 0-.5-.22-.5-.5v-2.07c0-.28.22-.5.5-.5h3.64c.28 0 .5.22.5.5v2.07c0 .28-.23.5-.5.5zm-3.15-1h2.64v-1.07h-2.64v1.07zM25.05 37.02h-3.64c-.28 0-.5-.22-.5-.5v-2.07c0-.28.22-.5.5-.5h3.64c.28 0 .5.22.5.5v2.07c0 .28-.22.5-.5.5zm-3.14-1h2.64v-1.07h-2.64v1.07zM17.62 37.02h-2.89c-.28 0-.5-.22-.5-.5v-2.07c0-.28.22-.5.5-.5h2.89c.28 0 .5.22.5.5v2.07c0 .28-.22.5-.5.5zm-2.39-1h1.89v-1.07h-1.89v1.07zM39.14 37.02h-2.89c-.28 0-.5-.22-.5-.5v-2.07c0-.28.22-.5.5-.5h2.89c.28 0 .5.22.5.5v2.07c0 .28-.22.5-.5.5zm-2.39-1h1.89v-1.07h-1.89v1.07zM32.47 32.13h1.15v1.2h-1.15zM25.09 32.13h1.15v1.2h-1.15zM17.75 32.13h1.15v1.2h-1.15zM34.94 13l-4 2.69-4-2.69-4 2.69-4-2.69-5.84 4.6v1.95h27.68V17.6z" />
+                  </g>
+                </svg>
+                <div class="mobile-filter__types--name">lorem</div>
+              </div>
+              <!-- 4 fotka -->
+              <div class="mobile-filter__type--svg" id="filter-focus4">
+                <input type="radio" id="filter-btn4" class="filter-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140"
+                  height="60" viewBox="0 0 50 50">
+                  <defs>
+                    <path d="M0 .076h22.684V18.56H0z" />
+                    <path d="M.973.23h22.9V21.6H.972z" />
+                    <path d="M0 28.77h41.873V1.16H0z" />
+                  </defs>
+                  <g fill="none" fill-rule="evenodd" transform="translate(4 11)">
+                    <g transform="translate(0 10.21)">
+                      <mask fill="#fff">
+                        <use xlink:href="#a" />
+                      </mask>
+                      <path fill="#E4D8F0"
+                        d="M22.168 18.56c.174-.217.357-.427.516-.656-3.852-.1-7.699-.349-11.553-.235-1.293.558-3.17-.049-3.17-1.832V.077C3.309 1.801 0 6.15 0 11.253c0 2.754.97 5.283 2.587 7.306h19.581z"
+                        mask="url(#b)" />
+                    </g>
+                    <g transform="translate(18 .93)">
+                      <mask fill="#fff">
+                        <use xlink:href="#c" />
+                      </mask>
+                      <path fill="#E4D8F0"
+                        d="M11.479.23C7.039.23 3.155 2.494.973 5.888h16.32c1.225 0 1.894.803 2.05 1.706.09.198.162.408.195.648.593 4.468-.001 8.903-.412 13.358 2.879-2.193 4.746-5.571 4.746-9.39C23.872 5.593 18.323.23 11.48.23"
+                        mask="url(#d)" />
+                    </g>
+                    <mask fill="#fff">
+                      <use xlink:href="#e" />
+                    </mask>
+                    <path fill="#E4D8F0"
+                      d="M8.532 10.503h28.397V8.467H8.532zM8.532 27.971h2.84v-2.035h-2.84zM16.087 27.971h4.357v-2.035h-4.357zM24.995 27.971h4.357v-2.035h-4.357zM33.902 27.971h3.472v-2.035h-3.472z"
+                      mask="url(#f)" />
+                    <path fill="#E4D8F0"
+                      d="M8.075 28.153h2.106V8.095H8.075zM11.657 28.153h1.475v-8.312h-1.475zM20.46 28.153h1.475v-8.312H20.46zM29.262 28.153h1.475v-8.312h-1.475z"
+                      mask="url(#f)" />
+                    <path fill="#6950AB"
+                      d="M29.36 16.407h4.542v-4.39H29.36zM11.545 16.407h4.542v-4.39h-4.542zM20.46 16.407h4.542v-4.39H20.46z"
+                      mask="url(#f)" />
+                    <path fill="#6950AB"
+                      d="M34.503 27.574h2.271V8.675h-28.1v18.899H28.76V19.84c0-.32.27-.58.6-.58h4.544c.33 0 .6.26.6.58v7.733zm2.871 1.16h-3.471a.59.59 0 0 1-.6-.58V20.42h-3.344v7.733a.59.59 0 0 1-.6.58H8.075a.59.59 0 0 1-.6-.58V8.095c0-.32.268-.58.6-.58h29.3c.33 0 .6.26.6.58v20.059a.59.59 0 0 1-.6.58z"
+                      mask="url(#f)" />
+                    <path fill="#6950AB"
+                      d="M21.044 27.573h3.344v-7.152h-3.344v7.152zm3.944 1.16h-4.544a.59.59 0 0 1-.6-.58v-8.312c0-.32.27-.58.6-.58h4.544c.332 0 .6.26.6.58v8.312c0 .322-.268.58-.6.58zM12.145 27.573h3.342v-7.152h-3.342v7.152zm3.942 1.16h-4.542a.59.59 0 0 1-.6-.58v-8.312c0-.32.269-.58.6-.58h4.542c.333 0 .6.26.6.58v8.312c0 .322-.267.58-.6.58zM13.817 2.324L5.963 5.958V8.78h33.522V5.958l-7.853-3.634zM29.36 28.733h4.542v-1.16H29.36z"
+                      mask="url(#f)" />
+                    <path fill="#6950AB"
+                      d="M25.588 27.573h3.171v-1.24h-3.171v1.24zm3.771 1.16h-4.371a.59.59 0 0 1-.6-.58v-2.4c0-.32.268-.58.6-.58h4.371c.331 0 .6.26.6.58v2.4a.59.59 0 0 1-.6.58zM16.687 27.573h3.173v-1.24h-3.173v1.24zm3.773 1.16h-4.373a.59.59 0 0 1-.6-.58v-2.4c0-.32.269-.58.6-.58h4.373c.331 0 .6.26.6.58v2.4a.59.59 0 0 1-.6.58zM8.675 27.573h2.271v-1.24H8.675v1.24zm2.87 1.16h-3.47a.589.589 0 0 1-.6-.58v-2.4c0-.32.267-.58.6-.58h3.47c.333 0 .6.26.6.58v2.4c0 .322-.267.58-.6.58zM34.502 27.573h2.272v-1.24h-2.272v1.24zm2.872 1.16h-3.472a.59.59 0 0 1-.6-.58v-2.4c0-.32.27-.58.6-.58h3.472c.331 0 .6.26.6.58v2.4a.59.59 0 0 1-.6.58zM29.36 24.453h1.376V23.06h-1.377zM20.508 24.453h1.376V23.06h-1.376zM11.706 24.453h1.376V23.06h-1.376z"
+                      mask="url(#f)" />
+                  </g>
+                </svg>
+                <div class="mobile-filter__types--name">lorem</div>
+              </div>
+              <!-- 5 fotka -->
+              <div class="mobile-filter__type--svg" id="filter-focus5">
+                <input type="radio" id="filter-btn5" class="filter-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="140" height="60" viewBox="0 0 50 50">
+                  <g fill="none" fill-rule="evenodd">
+                    <path fill="#E4D8F0"
+                      d="M10.177 38.595V28.25C7.171 29.224 5 31.995 5 35.267c0 1.2.296 2.327.814 3.328h4.363zM42.255 38.595c1.414-1.775 2.277-3.99 2.277-6.418 0-4.286-2.627-7.965-6.385-9.591v16.009h4.108zM10.367 38.047h12.392v-2.144H10.367zM10.238 15.996h27.905v-1.635H10.238z" />
+                    <path fill="#E4D8F0" d="M10.678 35.903h1.668V14.361h-1.668zM25.687 38.047h12.39v-2.144h-12.39z" />
+                    <path fill="#6950AB"
+                      d="M26.194 37.487H37.57V14.362l-13.382-2.234-13.38 2.234v23.125h11.378V32.98c0-.31.256-.56.571-.56h2.864c.316 0 .572.25.572.56v4.506zm11.948 1.12h-12.52a.566.566 0 0 1-.571-.56V33.54H23.33v4.506c0 .309-.255.56-.572.56h-12.52a.566.566 0 0 1-.572-.56V13.889c0-.273.201-.506.475-.552l13.952-2.33c.063-.01.13-.01.192 0l13.953 2.33a.564.564 0 0 1 .476.552v24.158c0 .309-.256.56-.572.56z" />
+                    <path fill="#6950AB"
+                      d="M12.94 30.68h2.865v-2.807H12.94zM19.394 30.68h2.864v-2.807h-2.864zM25.848 30.68h2.864v-2.807h-2.864zM32.302 30.68h2.864v-2.807h-2.864zM12.94 25.742h2.865v-2.806H12.94zM19.394 25.742h2.864v-2.806h-2.864zM25.848 25.742h2.864v-2.806h-2.864zM32.302 25.742h2.864v-2.806h-2.864zM12.94 20.803h2.865v-2.806H12.94zM19.394 20.803h2.864v-2.806h-2.864zM25.848 20.803h2.864v-2.806h-2.864zM32.302 20.803h2.864v-2.806h-2.864zM20.742 38.607h7.97v-1.12h-7.97zM25.623 36.463h12.52v-1.12h-12.52zM10.367 16.556h27.776v-1.12H10.367zM10.367 36.463h12.521v-1.12H10.367zM38.504 14.36H9.877l14.313-3.129z" />
+                  </g>
+                </svg>
+                <div class="mobile-filter__types--name">lorem</div>
+              </div>
+              <!-- 6 fotka -->
+              <div class="mobile-filter__type--svg" id="filter-focus6">
+                <input type="radio" id="filter-btn6" class="filter-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="140" height="60" viewBox="0 0 50 50">
+                  <g fill="none" fill-rule="nonzero">
+                    <path fill="#E3D7EF"
+                      d="M10.01 14.55v-.03A8.697 8.697 0 0 0 5 22.4c0 3.49 2.05 6.49 5.01 7.89V14.55zM21.28 20.25c.32 0 .63.05.92.12a8.7 8.7 0 0 0-4.45-5.71v6.66a6.387 6.387 0 0 1 3.53-1.07zM37.44 37.26h7.88c0-5.29-3.26-9.81-7.88-11.69v11.69zM23.72 15.16h1.44v5.27h-1.44z" />
+                    <path fill="#E3D7EF"
+                      d="M9.82 13.28h1.44v23.49H9.82zM15.73 20.43h1.44v16.34h-1.44zM23.39 29.66h1.44v7.11h-1.44z" />
+                    <path fill="#E3D7EF"
+                      d="M10.23 14.48h7.59v1.44h-7.59zM24.13 15.63H37.1v1.44H24.13zM15.73 20.43h9.59v1.44h-9.59z" />
+                    <path fill="#6950AA"
+                      d="M37.59 37.27H23.57v-1h13.52V15.86l-6.51-2.82-6.51 2.82v4.21h-1v-4.54c0-.2.12-.38.3-.46l7.01-3.03c.12-.05.27-.05.4 0l7.01 3.03c.18.08.3.26.3.46v21.23c0 .28-.23.51-.5.51z" />
+                    <g fill="#6950AA">
+                      <path
+                        d="M32.14 18.66h1.89v2.16h-1.89zM32.14 23.53h1.89v2.16h-1.89zM32.14 28.4h1.89v2.16h-1.89zM27.13 18.66h1.89v2.16h-1.89zM27.13 23.53h1.89v2.16h-1.89zM27.13 28.4h1.89v2.16h-1.89z" />
+                    </g>
+                    <path fill="#6950AA"
+                      d="M25.57 37.27H15.31c-.28 0-.5-.22-.5-.5v-16.7c0-.28.22-.5.5-.5h10.25c.28 0 .5.22.5.5v9.4h-1v-8.9h-9.25v15.7h9.75v1h.01z" />
+                    <path fill="#6950AA"
+                      d="M17.83 37.27H9.64c-.28 0-.5-.22-.5-.5V12.5c0-.28.22-.5.5-.5h8.19c.28 0 .5.22.5.5v7.68h-1V13h-7.19v23.27h7.69v1z" />
+                    <path fill="#6950AA"
+                      d="M9.64 12.5h8.19v2.36H9.64zM17.83 22.84h5.16v1h-5.16zM17.83 26.31h5.16v1h-5.16zM17.83 29.79h5.16v1h-5.16zM17.83 33.26h5.16v1h-5.16z" />
+                    <path fill="#6950AA"
+                      d="M32.46 37.27h-9.48c-.28 0-.5-.22-.5-.5v-6.48c0-.16.08-.31.2-.4l4.74-3.48c.18-.13.42-.13.59 0l4.74 3.48c.13.09.2.24.2.4v6.48c.01.27-.21.5-.49.5zm-8.98-1h8.48v-5.73l-4.24-3.11-4.24 3.11v5.73z" />
+                    <path fill="#6950AA" d="M22.98 30.56h9.48l-4.74-3.75z" />
+                    <path fill="#FFF" d="M11.73 17.02h4" />
+                    <path fill="#6950AA" d="M11.73 16.52h4.01v1h-4.01z" />
+                    <path fill="#FFF" d="M11.73 20.07h4" />
+                    <path fill="#6950AA" d="M11.73 19.57h4.01v1h-4.01z" />
+                    <path fill="#FFF" d="M11.73 23.12h4" />
+                    <path fill="#6950AA" d="M11.73 22.62h4.01v1h-4.01z" />
+                    <path fill="#FFF" d="M11.73 26.17h4" />
+                    <path fill="#6950AA" d="M11.73 25.67h4.01v1h-4.01z" />
+                    <g>
+                      <path fill="#FFF" d="M11.73 29.22h4" />
+                      <path fill="#6950AA" d="M11.73 28.72h4.01v1h-4.01z" />
+                    </g>
+                    <g>
+                      <path fill="#FFF" d="M11.73 32.28h4" />
+                      <path fill="#6950AA" d="M11.73 31.78h4.01v1h-4.01z" />
+                    </g>
+                    <path fill="#6950AA" d="M23.57 15.92h14.02l-7.01-3.42zM26.58 33.5h2.29v3.27h-2.29z" />
+                  </g>
+                </svg>
+                <div class="mobile-filter__types--name">lorem</div>
+              </div>
+            </div>
+            <div class="mobile-filter__rooms">
+              <button class="mobile-filter__room room--komnaty"> Кол-во комнат</button>
+              <div id="rooms-btn" class="mobile-filter__room">1
+                <input type="radio" id="rooms-inp" class="filter-rooms">
+              </div>
+              <div id="rooms-btn2" class="mobile-filter__room">2
+                <input type="radio" id="rooms-inp2" class="filter-rooms">
+              </div>
+              <div id="rooms-btn3" class="mobile-filter__room">3
+                <input type="radio" id="rooms-inp3" class="filter-rooms">
+              </div>
+              <div id="rooms-btn4" class="mobile-filter__room">4
+                <input type="radio" id="rooms-inp4" class="filter-rooms">
+              </div>
+              <div id="rooms-btn5" class="mobile-filter__room room--5">5+
+                <input type="radio" id="rooms-inp5" class="filter-rooms">
+              </div>
+              <div id="rooms-btn6" class="mobile-filter__room room--7">
+                Свободная планировка
+                <input type="radio" id="rooms-inp6" class="filter-rooms">
+              </div>
+            </div>
+            <div class="mobile-filter__dropdown ">
+              <input type="text" placeholder="Цена от" class="mobile-filter__dropdown-input input-1">
+            </div>
+            <div class="mobile-filter__dropdown">
+              <input type="text" placeholder="до" class="mobile-filter__dropdown-input input-1">
+            </div>
+            <select id="year-1">
+              <option value="hide">$</option>
+              <option value="2010">$</option>
+              <option value="2011">Сом</option>
+            </select>
+            <div class="mobile-filter__buttons">
+              <button type="submit" class="submit-btn">Найти</button>
+              <input class="reset" type="reset" form="mob-filter">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- mobile filter -->
+  <section class="things">
+    <div class="container">
+      <h2 class="things__title">Lorem ipsum dolor sit amet consectetur.</h2>
+      <ul class="things__list">
+        <li class="things__item things__item--pallentesque">
+          <h3 class="things__subtitle">Lorem ipsum dolor sit amet.</h3>
+          <p class="things__description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ea laborum accusamus sint recusandae
+            numquam voluptatibus porro illo fugiat consectetur veniam vitae molestiae, atque in.
+          </p>
+        </li>
+        <li class="things__item things__item--conseqtetur ">
+          <h3 class="things__subtitle">Lorem, ipsum dolor.</h3>
+          <p class="things__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa illum accusamus mollitia! Dolor dolore
+            excepturi doloribus. Tenetur quod veritatis repellat.
+          </p>
+        </li>
+
+        <li class="things__item things__item--fermentum">
+          <h3 class="things__subtitle">Lorem ipsum dolor sit amet.</h3>
+          <p class="things__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magnam assumenda maiores quas fugiat
+            accusantium cum numquam labore! Iste, dignissimos harum dolor quia obcaecati quas.
+          </p>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+  <!-- top 3 things -->
+  <section class="sliders">
+    <div class="container">
+      <div class="slider">
+        <div class="swiper-container">
+          <button class="swiper-button-prev swiper-buttons"></button>
+          <button class="swiper-button-next swiper-buttons"></button>
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="slider-images" src="img/banner01.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner02.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner03.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner04.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner01.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner02.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner03.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner04.jpg" alt=slide"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="slider__content">
+          <div class="slider__price-and-calendar">
+            <p class="price">$265,000</p>
+            <button class="calendar">
+              <img src="https://dev.yurtah.com/icons/calendar-outlined-white.svg" alt="">
+              <p>Book</p>
+            </button>
+          </div>
+          <div class="slider__nav-icons">
+            <div class="slider__favorites-and-share">
+              <svg class="slider__favorites" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path data-testid="fi-path" fill="#e1e8ed" stroke="transparent" stroke-width="2%" fill-rule="evenodd" d="M12.076 21.385a2.584 2.584 0 0 1-1.864-.765C9.06 19.489 6.96 17.394 5.4 15.864a349.386 349.386 0 0 0-1.914-1.896C1.452 12.04.639 9.778 1.147 7.4c.627-2.877 3.101-5.088 6.032-5.371 1.678-.15 3.355.283 4.694 1.264l.203.15c1.406-1.098 3.203-1.597 5.016-1.397 2.863.316 5.303 2.51 5.913 5.337.508 2.362-.288 4.64-2.338 6.585L13.94 20.62a2.653 2.653 0 0 1-1.864.765zm-6.591-9.462l1.965 1.945a1359.09 1359.09 0 0 0 4.626 4.573l6.574-6.501c1.356-1.28 1.847-2.578 1.542-3.975-.356-1.663-1.762-2.943-3.422-3.126-1.373-.15-2.711.383-3.559 1.447l-1.135 1.413-1.135-1.413a3.501 3.501 0 0 0-.763-.732c-.796-.582-1.762-.815-2.728-.731-1.694.166-3.117 1.446-3.49 3.142-.288 1.414.203 2.71 1.525 3.958z" style="transition: all 0.3s ease 0s;"></path></svg>
+              <svg class="slider__share" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path fill="#e1e8ed" fill-rule="evenodd" d="M4.548 21.385a1.49 1.49 0 0 1-1.335-.843C3.161 20.436 2 17.96 2 14.607c0-3.23 1.89-5.794 3.103-7.111l-1.3-2.02a2.237 2.237 0 0 1-.087-2.3A2.215 2.215 0 0 1 5.675 2H18.97c.832 0 1.595.421 2.046 1.141.45.72.485 1.616.121 2.37L15.347 17.4c-.364.72-1.057 1.176-1.82 1.211a2.172 2.172 0 0 1-1.924-.983l-1.612-2.493c-2.93.65-4.004 5.057-4.021 5.11a1.484 1.484 0 0 1-1.283 1.14h-.139zm2.444-16.4l1.231 1.914a1.505 1.505 0 0 1-.295 1.966c-.017.018-2.981 2.546-2.981 5.742 0 .263.017.527.017.773 1.179-1.721 3.016-3.319 5.755-3.319.503 0 .953.246 1.23.667l1.353 2.09 4.801-9.85H6.993v.017z"></path></svg>
+            </div>
+            <div class="slider__terms">
+              <div class="slider__bed">
+                <img src="https://dev.yurtah.com/icons/bed.svg" alt="bed">
+                <p>2</p>
+              </div>
+              <div class="slider__bath">
+                <img src="https://dev.yurtah.com/icons/bath.svg" alt="bath">
+                <p>1.5</p>
+              </div>
+              <div class="slider__area">
+                <img src="https://dev.yurtah.com/icons/area.svg" alt="bath">
+                <p>950 ft <sup>2</sup></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="swiper-container">
+          <button class="swiper-button-prev swiper-buttons"></button>
+          <button class="swiper-button-next swiper-buttons"></button>
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="slider-images" src="img/banner01.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner02.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner03.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner04.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner01.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner02.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner03.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner04.jpg" alt=slide"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="slider__content">
+          <div class="slider__price-and-calendar">
+            <p class="price">$265,000</p>
+            <button class="calendar">
+              <img src="https://dev.yurtah.com/icons/calendar-outlined-white.svg" alt="">
+              <p>Book</p>
+            </button>
+          </div>
+          <div class="slider__nav-icons">
+            <div class="slider__favorites-and-share">
+              <svg class="slider__favorites" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path data-testid="fi-path" fill="#e1e8ed" stroke="transparent" stroke-width="2%" fill-rule="evenodd" d="M12.076 21.385a2.584 2.584 0 0 1-1.864-.765C9.06 19.489 6.96 17.394 5.4 15.864a349.386 349.386 0 0 0-1.914-1.896C1.452 12.04.639 9.778 1.147 7.4c.627-2.877 3.101-5.088 6.032-5.371 1.678-.15 3.355.283 4.694 1.264l.203.15c1.406-1.098 3.203-1.597 5.016-1.397 2.863.316 5.303 2.51 5.913 5.337.508 2.362-.288 4.64-2.338 6.585L13.94 20.62a2.653 2.653 0 0 1-1.864.765zm-6.591-9.462l1.965 1.945a1359.09 1359.09 0 0 0 4.626 4.573l6.574-6.501c1.356-1.28 1.847-2.578 1.542-3.975-.356-1.663-1.762-2.943-3.422-3.126-1.373-.15-2.711.383-3.559 1.447l-1.135 1.413-1.135-1.413a3.501 3.501 0 0 0-.763-.732c-.796-.582-1.762-.815-2.728-.731-1.694.166-3.117 1.446-3.49 3.142-.288 1.414.203 2.71 1.525 3.958z" style="transition: all 0.3s ease 0s;"></path></svg>
+              <svg class="slider__share" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path fill="#e1e8ed" fill-rule="evenodd" d="M4.548 21.385a1.49 1.49 0 0 1-1.335-.843C3.161 20.436 2 17.96 2 14.607c0-3.23 1.89-5.794 3.103-7.111l-1.3-2.02a2.237 2.237 0 0 1-.087-2.3A2.215 2.215 0 0 1 5.675 2H18.97c.832 0 1.595.421 2.046 1.141.45.72.485 1.616.121 2.37L15.347 17.4c-.364.72-1.057 1.176-1.82 1.211a2.172 2.172 0 0 1-1.924-.983l-1.612-2.493c-2.93.65-4.004 5.057-4.021 5.11a1.484 1.484 0 0 1-1.283 1.14h-.139zm2.444-16.4l1.231 1.914a1.505 1.505 0 0 1-.295 1.966c-.017.018-2.981 2.546-2.981 5.742 0 .263.017.527.017.773 1.179-1.721 3.016-3.319 5.755-3.319.503 0 .953.246 1.23.667l1.353 2.09 4.801-9.85H6.993v.017z"></path></svg>
+            </div>
+            <div class="slider__terms">
+              <div class="slider__bed">
+                <img src="https://dev.yurtah.com/icons/bed.svg" alt="bed">
+                <p>2</p>
+              </div>
+              <div class="slider__bath">
+                <img src="https://dev.yurtah.com/icons/bath.svg" alt="bath">
+                <p>1.5</p>
+              </div>
+              <div class="slider__area">
+                <img src="https://dev.yurtah.com/icons/area.svg" alt="bath">
+                <p>950 ft <sup>2</sup></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="swiper-container">
+          <button class="swiper-button-prev swiper-buttons"></button>
+          <button class="swiper-button-next swiper-buttons"></button>
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="slider-images" src="img/banner01.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner02.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner03.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner04.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner01.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner02.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner03.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner04.jpg" alt=slide"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="slider__content">
+          <div class="slider__price-and-calendar">
+            <p class="price">$265,000</p>
+            <button class="calendar">
+              <img src="https://dev.yurtah.com/icons/calendar-outlined-white.svg" alt="">
+              <p>Book</p>
+            </button>
+          </div>
+          <div class="slider__nav-icons">
+            <div class="slider__favorites-and-share">
+              <svg class="slider__favorites" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path data-testid="fi-path" fill="#e1e8ed" stroke="transparent" stroke-width="2%" fill-rule="evenodd" d="M12.076 21.385a2.584 2.584 0 0 1-1.864-.765C9.06 19.489 6.96 17.394 5.4 15.864a349.386 349.386 0 0 0-1.914-1.896C1.452 12.04.639 9.778 1.147 7.4c.627-2.877 3.101-5.088 6.032-5.371 1.678-.15 3.355.283 4.694 1.264l.203.15c1.406-1.098 3.203-1.597 5.016-1.397 2.863.316 5.303 2.51 5.913 5.337.508 2.362-.288 4.64-2.338 6.585L13.94 20.62a2.653 2.653 0 0 1-1.864.765zm-6.591-9.462l1.965 1.945a1359.09 1359.09 0 0 0 4.626 4.573l6.574-6.501c1.356-1.28 1.847-2.578 1.542-3.975-.356-1.663-1.762-2.943-3.422-3.126-1.373-.15-2.711.383-3.559 1.447l-1.135 1.413-1.135-1.413a3.501 3.501 0 0 0-.763-.732c-.796-.582-1.762-.815-2.728-.731-1.694.166-3.117 1.446-3.49 3.142-.288 1.414.203 2.71 1.525 3.958z" style="transition: all 0.3s ease 0s;"></path></svg>
+              <svg class="slider__share" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path fill="#e1e8ed" fill-rule="evenodd" d="M4.548 21.385a1.49 1.49 0 0 1-1.335-.843C3.161 20.436 2 17.96 2 14.607c0-3.23 1.89-5.794 3.103-7.111l-1.3-2.02a2.237 2.237 0 0 1-.087-2.3A2.215 2.215 0 0 1 5.675 2H18.97c.832 0 1.595.421 2.046 1.141.45.72.485 1.616.121 2.37L15.347 17.4c-.364.72-1.057 1.176-1.82 1.211a2.172 2.172 0 0 1-1.924-.983l-1.612-2.493c-2.93.65-4.004 5.057-4.021 5.11a1.484 1.484 0 0 1-1.283 1.14h-.139zm2.444-16.4l1.231 1.914a1.505 1.505 0 0 1-.295 1.966c-.017.018-2.981 2.546-2.981 5.742 0 .263.017.527.017.773 1.179-1.721 3.016-3.319 5.755-3.319.503 0 .953.246 1.23.667l1.353 2.09 4.801-9.85H6.993v.017z"></path></svg>
+            </div>
+            <div class="slider__terms">
+              <div class="slider__bed">
+                <img src="https://dev.yurtah.com/icons/bed.svg" alt="bed">
+                <p>2</p>
+              </div>
+              <div class="slider__bath">
+                <img src="https://dev.yurtah.com/icons/bath.svg" alt="bath">
+                <p>1.5</p>
+              </div>
+              <div class="slider__area">
+                <img src="https://dev.yurtah.com/icons/area.svg" alt="bath">
+                <p>950 ft <sup>2</sup></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="swiper-container">
+          <button class="swiper-button-prev swiper-buttons"></button>
+          <button class="swiper-button-next swiper-buttons"></button>
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="slider-images" src="img/banner01.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner02.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner03.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner04.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner01.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner02.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner03.jpg" alt=slide"></div>
+              <div class="swiper-slide"><img class="slider-images" src="img/banner04.jpg" alt=slide"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="slider__content">
+          <div class="slider__price-and-calendar">
+            <p class="price">$265,000</p>
+            <button class="calendar">
+              <img src="https://dev.yurtah.com/icons/calendar-outlined-white.svg" alt="">
+              <p>Book</p>
+            </button>
+          </div>
+          <div class="slider__nav-icons">
+            <div class="slider__favorites-and-share">
+              <svg class="slider__favorites" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path data-testid="fi-path" fill="#e1e8ed" stroke="transparent" stroke-width="2%" fill-rule="evenodd" d="M12.076 21.385a2.584 2.584 0 0 1-1.864-.765C9.06 19.489 6.96 17.394 5.4 15.864a349.386 349.386 0 0 0-1.914-1.896C1.452 12.04.639 9.778 1.147 7.4c.627-2.877 3.101-5.088 6.032-5.371 1.678-.15 3.355.283 4.694 1.264l.203.15c1.406-1.098 3.203-1.597 5.016-1.397 2.863.316 5.303 2.51 5.913 5.337.508 2.362-.288 4.64-2.338 6.585L13.94 20.62a2.653 2.653 0 0 1-1.864.765zm-6.591-9.462l1.965 1.945a1359.09 1359.09 0 0 0 4.626 4.573l6.574-6.501c1.356-1.28 1.847-2.578 1.542-3.975-.356-1.663-1.762-2.943-3.422-3.126-1.373-.15-2.711.383-3.559 1.447l-1.135 1.413-1.135-1.413a3.501 3.501 0 0 0-.763-.732c-.796-.582-1.762-.815-2.728-.731-1.694.166-3.117 1.446-3.49 3.142-.288 1.414.203 2.71 1.525 3.958z" style="transition: all 0.3s ease 0s;"></path></svg>
+              <svg class="slider__share" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path fill="#e1e8ed" fill-rule="evenodd" d="M4.548 21.385a1.49 1.49 0 0 1-1.335-.843C3.161 20.436 2 17.96 2 14.607c0-3.23 1.89-5.794 3.103-7.111l-1.3-2.02a2.237 2.237 0 0 1-.087-2.3A2.215 2.215 0 0 1 5.675 2H18.97c.832 0 1.595.421 2.046 1.141.45.72.485 1.616.121 2.37L15.347 17.4c-.364.72-1.057 1.176-1.82 1.211a2.172 2.172 0 0 1-1.924-.983l-1.612-2.493c-2.93.65-4.004 5.057-4.021 5.11a1.484 1.484 0 0 1-1.283 1.14h-.139zm2.444-16.4l1.231 1.914a1.505 1.505 0 0 1-.295 1.966c-.017.018-2.981 2.546-2.981 5.742 0 .263.017.527.017.773 1.179-1.721 3.016-3.319 5.755-3.319.503 0 .953.246 1.23.667l1.353 2.09 4.801-9.85H6.993v.017z"></path></svg>
+            </div>
+            <div class="slider__terms">
+              <div class="slider__bed">
+                <img src="https://dev.yurtah.com/icons/bed.svg" alt="bed">
+                <p>2</p>
+              </div>
+              <div class="slider__bath">
+                <img src="https://dev.yurtah.com/icons/bath.svg" alt="bath">
+                <p>1.5</p>
+              </div>
+              <div class="slider__area">
+                <img src="https://dev.yurtah.com/icons/area.svg" alt="bath">
+                <p>950 ft <sup>2</sup></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- slider -->
+  <section class="property_types">
+    <div class="container">
+      <h2 class="identifying-header">property types</h2>
+      <div class="home-page__home-types-section__tilte">
+        Типы недвижимости
+      </div>
+      <div class="home-page__home-types-section__inner">
+        <a href="#" class="link home-page__home-types-section__inner__item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+            <g fill="none" fill-rule="evenodd">
+              <path fill="#E4D8F0"
+                d="M13.402 26.107c.396.38.788 1.12.963 1.677.285-.774.637-1.436 1.406-2.028.715-.551 1.871-.911 3.004-1.337a10.725 10.725 0 0 0-3.901-.753c-1.829 0-3.551.457-5.063 1.255 1.213-.002 2.692.328 3.59 1.186M8.078 33.014c0-2.136-.207-4.927-.207-6.978C5.713 28.023 4 31.376 4 34.54c0 .853.109 1.68.293 2.475h3.812c-1.5-.774-1.505-3.205-.027-4.001M41.84 26.626c.19-.807.304-1.646.304-2.513 0-6.006-4.87-10.874-10.875-10.874-4.264 0-7.946 2.461-9.729 6.035 1.859-1.412 4.461-1.458 5.08 1.575.125.608.07 1.224-.095 1.829.297-.037.55-.067.682-.072 1.038-.033 2.058-.158 3.1-.127 1.555.045 3.004 1.937 1.944 3.39-.03.038-.068.078-.1.116 1.423.004 2.975-.306 3.723-.61 1.5-.61 2.705.897 2.85 2.172.292 2.562.986 8.43.687 9.47h6.958c.067-.488.114-.981.114-1.488 0-3.684-1.838-6.935-4.643-8.903" />
+              <path fill="#6950AB" d="M29.674 32.197h5.29v-3.67h-5.29zM12.228 32.197h5.29v-3.67h-5.29z" />
+              <path fill="#E4D8F0" d="M7.872 34.258h2.123v-7.792H7.872z" />
+              <path fill="#E4D8F0"
+                d="M9.413 28.087h29.298v-1.62H9.413zM7.162 35.977h13.613v-1.982H7.162zM26.096 35.977H39.71v-1.982H26.096z" />
+              <path fill="#6950AB" d="M39.827 34.258H38.59v-7.172H8.605v7.172H7.367v-8.41h32.46z" />
+              <path fill="#6950AB"
+                d="M35.72 16.129H11.474L6.101 27.09h12.465l5.032-7.939 5.031 7.939h12.464zM20.459 33.414H7.215c-.615 0-1.114.498-1.114 1.113v1.376c0 .615.499 1.113 1.114 1.113H20.46c.615 0 1.113-.498 1.113-1.113v-1.376c0-.615-.498-1.113-1.113-1.113zm-13.12 2.363h12.995v-1.125H7.339v1.125zM39.57 33.414H26.237c-.602 0-1.089.488-1.089 1.09v1.422c0 .603.487 1.09 1.089 1.09H39.57c.601 0 1.09-.487 1.09-1.09v-1.423a1.09 1.09 0 0 0-1.09-1.089zm-13.184 2.363h13.035v-1.125H26.386v1.125z" />
+              <path fill="#6950AB"
+                d="M20.395 37.015h5.943v-8.489h-5.943v8.489zm1.238-1.237H25.1v-6.012h-3.467v6.012z" />
+            </g>
+          </svg>
+          <div class="home-page__home-types-section__inner__item__name">
+
+            Condos
+          </div>
+        </a>
+        <a href="#" class="link home-page__home-types-section__inner__item">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+            viewBox="0 0 50 50">
+            <defs>
+              <path d="M1.046.137h8.106v15.69H1.046z" />
+              <path d="M0 1.154h26.938v12.237H0z" />
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+              <g transform="translate(35.303 22.9)">
+                <mask fill="#fff">
+                  <use xlink:href="#a" />
+                </mask>
+                <path fill="#E4D8F0"
+                  d="M4.666.137v15.072H1.158V6.485h-.112v9.341h6.21a11.786 11.786 0 0 0 1.896-6.42c0-3.763-1.757-7.107-4.486-9.27"
+                  mask="url(#b)" />
+              </g>
+              <g transform="translate(5 25.335)">
+                <mask fill="#fff">
+                  <use xlink:href="#c" />
+                </mask>
+                <path fill="#E4D8F0" d="M26.938 4.05h-.065v8.724h-21.5V1.154A11.81 11.81 0 0 0 .23 13.391h26.707v-9.34z"
+                  mask="url(#d)" />
+              </g>
+              <path fill="#E4D8F0"
+                d="M10.83 19.584h28.683v-2.137H10.829zM10.83 37.916h21.037V35.78H10.829zM36.455 37.916h3.507V35.78h-3.507z" />
+              <path fill="#E4D8F0" d="M10.366 38.109h2.127V17.057h-2.127z" />
+              <path fill="#6950AB"
+                d="M31.867 25.781h4.588v-4.609h-4.588zM22.862 33.993h4.588v-4.608h-4.588zM13.872 25.781h4.589v-4.609h-4.59zM22.876 25.781h4.59v-4.609h-4.59zM13.872 33.993h4.589v-4.608h-4.59z" />
+              <path fill="#6950AB"
+                d="M37.06 37.5h2.297V17.666H10.972V37.5h20.289v-8.115c0-.336.27-.609.606-.609h4.588c.334 0 .606.273.606.609V37.5zm2.903 1.217h-3.508a.608.608 0 0 1-.606-.608v-8.116h-3.376v8.116a.608.608 0 0 1-.606.608h-21.5a.607.607 0 0 1-.607-.608V17.057c0-.336.27-.608.606-.608h29.597c.334 0 .606.272.606.608V38.11a.608.608 0 0 1-.606.608z" />
+              <path fill="#6950AB" d="M25.163 11l-16.93 3.813v2.965h33.861v-2.965zM31.867 38.717h4.588V37.5h-4.588z" />
+              <path fill="#6950AB"
+                d="M10.972 37.5h20.289v-1.303H10.972V37.5zm20.895 1.217h-21.5a.607.607 0 0 1-.607-.608v-2.52c0-.338.27-.61.606-.61h21.5c.335 0 .607.272.607.61v2.52a.608.608 0 0 1-.606.608zM37.06 37.5h2.296v-1.303h-2.295V37.5zm2.902 1.217h-3.507a.608.608 0 0 1-.607-.608v-2.52c0-.338.272-.61.607-.61h3.507c.335 0 .606.272.606.61v2.52a.608.608 0 0 1-.606.608z" />
+              <path fill="#6950AB" d="M32 33h1v2h-1z" />
+            </g>
+          </svg>
+          <div class="home-page__home-types-section__inner__item__name">
+
+            Co-ops
+          </div>
+        </a>
+        <a href="#" class="link home-page__home-types-section__inner__item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+            <g fill="none" fill-rule="nonzero">
+              <path fill="#E3D7EF"
+                d="M26.47 37.05c.14-.19.3-.37.43-.57-3.21-.09-6.42-.3-9.63-.2-1.08.48-2.64-.04-2.64-1.58V21.12C10.76 22.6 8 26.35 8 30.75c0 2.37.81 4.55 2.16 6.3h16.31zM32.57 13.25c-3.7 0-6.94 1.95-8.76 4.88h13.6c1.02 0 1.58.69 1.71 1.47.08.17.14.35.16.56.49 3.85 0 7.67-.34 11.52 2.4-1.89 3.95-4.8 3.95-8.09 0-5.72-4.62-10.34-10.32-10.34z" />
+              <path fill="#E3D7EF"
+                d="M15.11 19.55h23.66v1.75H15.11zM15.11 34.61h2.37v1.75h-2.37zM21.41 34.61h3.63v1.75h-3.63zM28.83 34.61h3.63v1.75h-3.63zM36.25 34.61h2.89v1.75h-2.89z" />
+              <path fill="#E3D7EF"
+                d="M14.73 19.23h1.75v17.29h-1.75zM17.71 29.35h1.23v7.17h-1.23zM25.05 29.35h1.23v7.17h-1.23zM32.39 29.35h1.23v7.17h-1.23z" />
+              <path fill="#6950AA"
+                d="M32.47 22.61h3.79v3.79h-3.79zM17.62 22.61h3.79v3.79h-3.79zM25.05 22.61h3.79v3.79h-3.79z" />
+              <path fill="#6950AA"
+                d="M39.15 37.02h-2.89c-.28 0-.5-.22-.5-.5v-6.67h-2.79v6.67c0 .28-.22.5-.5.5H14.73c-.28 0-.5-.22-.5-.5V19.23c0-.28.22-.5.5-.5h24.42c.28 0 .5.22.5.5v17.29c0 .28-.23.5-.5.5zm-2.4-1h1.89V19.73H15.23v16.29h16.74v-6.67c0-.28.22-.5.5-.5h3.79c.28 0 .5.22.5.5v6.67h-.01z" />
+              <path fill="#6950AA"
+                d="M28.82 37.02h-3.79c-.28 0-.5-.22-.5-.5v-7.17c0-.28.22-.5.5-.5h3.79c.28 0 .5.22.5.5v7.17c0 .28-.22.5-.5.5zm-3.28-1h2.79v-6.17h-2.79v6.17zM21.41 37.02h-3.79c-.28 0-.5-.22-.5-.5v-7.17c0-.28.22-.5.5-.5h3.79c.28 0 .5.22.5.5v7.17c0 .28-.23.5-.5.5zm-3.29-1h2.79v-6.17h-2.79v6.17zM32.47 36.02h3.79v1h-3.79z" />
+              <path fill="#6950AA"
+                d="M32.47 37.02h-3.64c-.28 0-.5-.22-.5-.5v-2.07c0-.28.22-.5.5-.5h3.64c.28 0 .5.22.5.5v2.07c0 .28-.23.5-.5.5zm-3.15-1h2.64v-1.07h-2.64v1.07zM25.05 37.02h-3.64c-.28 0-.5-.22-.5-.5v-2.07c0-.28.22-.5.5-.5h3.64c.28 0 .5.22.5.5v2.07c0 .28-.22.5-.5.5zm-3.14-1h2.64v-1.07h-2.64v1.07zM17.62 37.02h-2.89c-.28 0-.5-.22-.5-.5v-2.07c0-.28.22-.5.5-.5h2.89c.28 0 .5.22.5.5v2.07c0 .28-.22.5-.5.5zm-2.39-1h1.89v-1.07h-1.89v1.07zM39.14 37.02h-2.89c-.28 0-.5-.22-.5-.5v-2.07c0-.28.22-.5.5-.5h2.89c.28 0 .5.22.5.5v2.07c0 .28-.22.5-.5.5zm-2.39-1h1.89v-1.07h-1.89v1.07zM32.47 32.13h1.15v1.2h-1.15zM25.09 32.13h1.15v1.2h-1.15zM17.75 32.13h1.15v1.2h-1.15zM34.94 13l-4 2.69-4-2.69-4 2.69-4-2.69-5.84 4.6v1.95h27.68V17.6z" />
+            </g>
+          </svg>
+          <div class="home-page__home-types-section__inner__item__name">
+
+            Condops
+          </div>
+        </a>
+        <a href="#" class="link home-page__home-types-section__inner__item">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+            viewBox="0 0 50 50">
+            <defs>
+              <path id="a" d="M0 .076h22.684V18.56H0z" />
+              <path id="c" d="M.973.23h22.9V21.6H.972z" />
+              <path id="e" d="M0 28.77h41.873V1.16H0z" />
+            </defs>
+            <g fill="none" fill-rule="evenodd" transform="translate(4 11)">
+              <g transform="translate(0 10.21)">
+                <mask id="b" fill="#fff">
+                  <use xlink:href="#a" />
+                </mask>
+                <path fill="#E4D8F0"
+                  d="M22.168 18.56c.174-.217.357-.427.516-.656-3.852-.1-7.699-.349-11.553-.235-1.293.558-3.17-.049-3.17-1.832V.077C3.309 1.801 0 6.15 0 11.253c0 2.754.97 5.283 2.587 7.306h19.581z"
+                  mask="url(#b)" />
+              </g>
+              <g transform="translate(18 .93)">
+                <mask fill="#fff">
+                  <use xlink:href="#c" />
+                </mask>
+                <path fill="#E4D8F0"
+                  d="M11.479.23C7.039.23 3.155 2.494.973 5.888h16.32c1.225 0 1.894.803 2.05 1.706.09.198.162.408.195.648.593 4.468-.001 8.903-.412 13.358 2.879-2.193 4.746-5.571 4.746-9.39C23.872 5.593 18.323.23 11.48.23"
+                  mask="url(#d)" />
+              </g>
+              <mask fill="#fff">
+                <use xlink:href="#e" />
+              </mask>
+              <path fill="#E4D8F0"
+                d="M8.532 10.503h28.397V8.467H8.532zM8.532 27.971h2.84v-2.035h-2.84zM16.087 27.971h4.357v-2.035h-4.357zM24.995 27.971h4.357v-2.035h-4.357zM33.902 27.971h3.472v-2.035h-3.472z"
+                mask="url(#f)" />
+              <path fill="#E4D8F0"
+                d="M8.075 28.153h2.106V8.095H8.075zM11.657 28.153h1.475v-8.312h-1.475zM20.46 28.153h1.475v-8.312H20.46zM29.262 28.153h1.475v-8.312h-1.475z"
+                mask="url(#f)" />
+              <path fill="#6950AB"
+                d="M29.36 16.407h4.542v-4.39H29.36zM11.545 16.407h4.542v-4.39h-4.542zM20.46 16.407h4.542v-4.39H20.46z"
+                mask="url(#f)" />
+              <path fill="#6950AB"
+                d="M34.503 27.574h2.271V8.675h-28.1v18.899H28.76V19.84c0-.32.27-.58.6-.58h4.544c.33 0 .6.26.6.58v7.733zm2.871 1.16h-3.471a.59.59 0 0 1-.6-.58V20.42h-3.344v7.733a.59.59 0 0 1-.6.58H8.075a.59.59 0 0 1-.6-.58V8.095c0-.32.268-.58.6-.58h29.3c.33 0 .6.26.6.58v20.059a.59.59 0 0 1-.6.58z"
+                mask="url(#f)" />
+              <path fill="#6950AB"
+                d="M21.044 27.573h3.344v-7.152h-3.344v7.152zm3.944 1.16h-4.544a.59.59 0 0 1-.6-.58v-8.312c0-.32.27-.58.6-.58h4.544c.332 0 .6.26.6.58v8.312c0 .322-.268.58-.6.58zM12.145 27.573h3.342v-7.152h-3.342v7.152zm3.942 1.16h-4.542a.59.59 0 0 1-.6-.58v-8.312c0-.32.269-.58.6-.58h4.542c.333 0 .6.26.6.58v8.312c0 .322-.267.58-.6.58zM13.817 2.324L5.963 5.958V8.78h33.522V5.958l-7.853-3.634zM29.36 28.733h4.542v-1.16H29.36z"
+                mask="url(#f)" />
+              <path fill="#6950AB"
+                d="M25.588 27.573h3.171v-1.24h-3.171v1.24zm3.771 1.16h-4.371a.59.59 0 0 1-.6-.58v-2.4c0-.32.268-.58.6-.58h4.371c.331 0 .6.26.6.58v2.4a.59.59 0 0 1-.6.58zM16.687 27.573h3.173v-1.24h-3.173v1.24zm3.773 1.16h-4.373a.59.59 0 0 1-.6-.58v-2.4c0-.32.269-.58.6-.58h4.373c.331 0 .6.26.6.58v2.4a.59.59 0 0 1-.6.58zM8.675 27.573h2.271v-1.24H8.675v1.24zm2.87 1.16h-3.47a.589.589 0 0 1-.6-.58v-2.4c0-.32.267-.58.6-.58h3.47c.333 0 .6.26.6.58v2.4c0 .322-.267.58-.6.58zM34.502 27.573h2.272v-1.24h-2.272v1.24zm2.872 1.16h-3.472a.59.59 0 0 1-.6-.58v-2.4c0-.32.27-.58.6-.58h3.472c.331 0 .6.26.6.58v2.4a.59.59 0 0 1-.6.58zM29.36 24.453h1.376V23.06h-1.377zM20.508 24.453h1.376V23.06h-1.376zM11.706 24.453h1.376V23.06h-1.376z"
+                mask="url(#f)" />
+            </g>
+          </svg>
+          <div class="home-page__home-types-section__inner__item__name">
+
+            Townhouses
+          </div>
+        </a>
+        <a href="#" class="link home-page__home-types-section__inner__item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+            <g fill="none" fill-rule="evenodd">
+              <path fill="#E4D8F0"
+                d="M10.177 38.595V28.25C7.171 29.224 5 31.995 5 35.267c0 1.2.296 2.327.814 3.328h4.363zM42.255 38.595c1.414-1.775 2.277-3.99 2.277-6.418 0-4.286-2.627-7.965-6.385-9.591v16.009h4.108zM10.367 38.047h12.392v-2.144H10.367zM10.238 15.996h27.905v-1.635H10.238z" />
+              <path fill="#E4D8F0" d="M10.678 35.903h1.668V14.361h-1.668zM25.687 38.047h12.39v-2.144h-12.39z" />
+              <path fill="#6950AB"
+                d="M26.194 37.487H37.57V14.362l-13.382-2.234-13.38 2.234v23.125h11.378V32.98c0-.31.256-.56.571-.56h2.864c.316 0 .572.25.572.56v4.506zm11.948 1.12h-12.52a.566.566 0 0 1-.571-.56V33.54H23.33v4.506c0 .309-.255.56-.572.56h-12.52a.566.566 0 0 1-.572-.56V13.889c0-.273.201-.506.475-.552l13.952-2.33c.063-.01.13-.01.192 0l13.953 2.33a.564.564 0 0 1 .476.552v24.158c0 .309-.256.56-.572.56z" />
+              <path fill="#6950AB"
+                d="M12.94 30.68h2.865v-2.807H12.94zM19.394 30.68h2.864v-2.807h-2.864zM25.848 30.68h2.864v-2.807h-2.864zM32.302 30.68h2.864v-2.807h-2.864zM12.94 25.742h2.865v-2.806H12.94zM19.394 25.742h2.864v-2.806h-2.864zM25.848 25.742h2.864v-2.806h-2.864zM32.302 25.742h2.864v-2.806h-2.864zM12.94 20.803h2.865v-2.806H12.94zM19.394 20.803h2.864v-2.806h-2.864zM25.848 20.803h2.864v-2.806h-2.864zM32.302 20.803h2.864v-2.806h-2.864zM20.742 38.607h7.97v-1.12h-7.97zM25.623 36.463h12.52v-1.12h-12.52zM10.367 16.556h27.776v-1.12H10.367zM10.367 36.463h12.521v-1.12H10.367zM38.504 14.36H9.877l14.313-3.129z" />
+            </g>
+          </svg>
+          <div class="home-page__home-types-section__inner__item__name">
+
+            Apartments
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- home type -->
+  <section class="popular__neighborhoods">
+    <div class="container">
+      <h2 class="popular__title">Популярные микрорайоны</h2>
+      <div class="popular__wrapper">
+        <div class="popular__images">
+          <img src="img/mikro1.jpeg" class="popular__img" alt="Природа">
+          <div class="popular__text-block">
+            <h4>Асанбай</h4>
+            <p>Какой прекрасный восход солнца</p>
+          </div>
+        </div>
+        <div class="popular__images">
+          <img src="img/8мкр.jpg" class="popular__img" alt="Природа">
+          <div class="popular__text-block">
+            <h4>8 мкр</h4>
+            <p>Какой прекрасный восход солнца</p>
+          </div>
+        </div>
+        <div class="popular__images">
+          <img src="img/12мкр.jpg" class="popular__img" alt="Природа">
+          <div class="popular__text-block">
+            <h4>12 мкр</h4>
+            <p>Какой прекрасный восход солнца</p>
+          </div>
+        </div>
+        <div class="popular__images">
+          <img src="img/djal.jpeg" class="popular__img" alt="Природа">
+          <div class="popular__text-block">
+            <h4>Джал</h4>
+            <p>Какой прекрасный восход солнца</p>
+          </div>
+        </div>
+        <div class="popular__images">
+          <img src="img/Аламедин-1.jpg" class="popular__img" alt="Природа">
+          <div class="popular__text-block">
+            <h4>Аламедин-1</h4>
+            <p>Какой прекрасный восход солнца</p>
+          </div>
+        </div>
+        <div class="popular__images">
+          <img src="img/Тунгуч.jpg" class="popular__img" alt="Природа">
+          <div class="popular__text-block">
+            <h4>Тунгуч</h4>
+            <p>Какой прекрасный восход солнца</p>
+          </div>
+        </div>
+        <div class="popular__images">
+          <img src="img/восток5.jpg" class="popular__img" alt="Природа">
+          <div class="popular__text-block">
+            <h4>Восток-5</h4>
+            <p>Какой прекрасный восход солнца</p>
+          </div>
+        </div>
+        <div class="popular__images">
+          <img src="img/Свердловскиймкр.jpg" class="popular__img" alt="Природа">
+          <div class="popular__text-block">
+            <h4>Свердловский мкр</h4>
+            <p>Какой прекрасный восход солнца</p>
+          </div>
+        </div>
+        <div class="popular__images">
+          <img src="img/центр.jpg" class="popular__img" alt="Природа">
+          <div class="popular__text-block">
+            <h4>Центр</h4>
+            <p>Какой прекрасный восход солнца</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- popular__neighborhoods -->
+
+  <section class="popular__neighborhoods">
+    <div class="container">
+      <h2 class="popular__title">Рекомендуемые апартаменты</h2>
+      <div class="popular__wrapper">
+        <div class="popular__images">
+          <img src="img/mikro1.jpeg" class="popular__img" alt="Природа">
+          <div class="popular__text-block">
+            <h4>Бассейн</h4>
+            <p>Какой прекрасный восход солнца</p>
+          </div>
+        </div>
+        <div class="popular__images">
+          <img src="img/mikro1.jpeg" class="popular__img" alt="Природа">
+          <div class="popular__text-block">
+            <h4>Джал</h4>
+            <p>Какой прекрасный восход солнца</p>
+          </div>
+        </div>
+        <div class="popular__images">
+          <img src="img/mikro1.jpeg" class="popular__img" alt="Природа">
+          <div class="popular__text-block">
+            <h4>Природа</h4>
+            <p>Какой прекрасный восход солнца</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- popular__neighborhoods -->
+  <section class="latest-news">
+    <div class="container">
+      <div class="latest-news__title-wrapper">
+        <h2 class="title">Последние новости</h2>
+        <p class="subtitle-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ut velit voluptas
+          dolore ipsa minus?</p>
+      </div>
+      <div class="latest-news__cards-wrapper">
+        <div class="latest-news__card">
+          <img src="https://dev.yurtah.com/media/thumbs/4b/7d/4b7d528f73548d30e746ae8ea50d5441.webp" class="card-image"
+            data-testid="picture__default-source" alt="city">
+          <h3 class="card-title">Lorem ipsum dolor sit amet.</h3>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi officia ea totam
+            harum vitae hic quos soluta veritatis voluptatibus pariatur.</p>
+          <p class="card-date">
+            31 10 2020
+          </p>
+        </div>
+        <div class="latest-news__card">
+          <img src="https://dev.yurtah.com/media/thumbs/4b/7d/4b7d528f73548d30e746ae8ea50d5441.webp" class="card-image"
+            data-testid="picture__default-source" alt="city">
+          <h3 class="card-title">Lorem ipsum dolor sit amet.</h3>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi officia ea totam
+            harum vitae hic quos soluta veritatis voluptatibus pariatur.</p>
+          <p class="card-date">
+            31 10 2020
+          </p>
+        </div>
+        <div class="latest-news__card">
+          <img src="https://dev.yurtah.com/media/thumbs/f3/6a/f36aacbf7f2e020788f4c2d5fc3d27a9.webp" class="card-image"
+            data-testid="picture__default-source" style="width: 100%; height: 100%; object-fit: cover;" alt="city">
+          <h3 class="card-title">Lorem ipsum dolor sit amet.</h3>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi officia ea totam
+            harum vitae hic quos soluta veritatis voluptatibus pariatur.</p>
+          <p class="card-date">
+            31 10 2020
+          </p>
+        </div>
+      </div>
+      <div class="latest-news-btn-wrapper">
+        <a class="latest-news-btn">BLOG</a>
+      </div>
+    </div>
+  </section>
+  <!-- latest news -->
+  <section class="subscribe">
+    <div class="container">
+        <div class="subscribe__wrapper">
+            <h2 class="subscribe__title">У нас есть кое-что для вас</h2>
+            <img class="subscribe__image" src="img/login-with-password.svg" alt="">
+            <div class="subscribe__buttons">
+                <button class="button" id="bayers">
+                    покупатели
+                </button>
+                <button class="button" id="agents">
+                    агенты
+                </button>
+            </div>
+        </div>
+        <div class="subscribe__content">
+            <h3 class="subscribe__sub-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+            <p class="subscribe__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod amet pariatur unde tenetur iusto sunt
+                laborum magni nulla, repellendus ea eveniet ex dolorum impedit quas dolorem quam, corporis qui fuga
+                dicta quos! Rerum soluta qui, impedit harum magnam tempore beatae fugiat unde hic quaerat magni,
+                temporibus voluptates debitis placeat suscipit alias eius quisquam at provident ex. Ut praesentium
+                libero laudantium!
+            </p>
+            <p class="subscribe__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod amet pariatur unde tenetur iusto sunt
+                laborum magni nulla, repellendus ea eveniet ex dolorum impedit quas dolorem quam, corporis qui fuga
+                dicta quos! Rerum soluta qui, impedit harum magnam tempore beatae fugiat unde hic quaerat magni,
+                temporibus voluptates debitis placeat suscipit alias eius quisquam at provident ex. Ut praesentium
+                libero laudantium!
+            </p>
+        </div>
+        <p>
+            <button class="subscribe__more-btn toggle-btns">Read more</button>
+        </p>
+        <p>
+            <button class="subscribe__less-btn toggle-btns">Show less</button>
+        </p>
+        <div class="popup active" id="bayersPopup">
+            <div class="popup__overlay"></div>
+            <div class="get-subscribed__popup popup__inner">
+                <div class="popup__inner__close-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="close-icon">
+                        <g fill="none" fill-rule="evenodd">
+                            <path fill="#523A84"
+                                d="M7.339 5.4L12 10.059l4.661-4.66a1.375 1.375 0 0 1 1.94 0 1.374 1.374 0 0 1 0 1.939l-4.662 4.659 4.661 4.66A1.374 1.374 0 0 1 17.63 19c-.355 0-.694-.13-.969-.404L12 13.936l-4.661 4.66a1.319 1.319 0 0 1-.97.404c-.355 0-.71-.13-.97-.404a1.374 1.374 0 0 1 0-1.938l4.661-4.661L5.4 7.338a1.374 1.374 0 0 1 0-1.938 1.375 1.375 0 0 1 1.939 0z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="popup__inner__content">
+                    <div>
+                        <img src="img/for-bayer.svg" alt="buyers">
+                        <h3 class="get-subscribed__popup__title">
+                            Далеко-далеко, за словесными.
+                        </h3>
+                        <p class="get-subscribed__popup__text">
+                            Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Возвращайся буквенных речью первую знаках.
+                        </p>
+                        <form class="auth-email-request__body__form">
+                            <div class="input-with-btn-inline">
+                                <div class="form-input-wrapper">
+                                    <div class="form-input">
+                                        <input class="form-input__input" name="email" type="email"
+                                            placeholder="Email" data-testid="email" value="">
+                                    </div>
+                                </div>
+                                <button class="button-custom full-width-on-mobile filled primary"
+                                    type="submit">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup active" id="agentsPopup">
+            <div class="popup__overlay"></div>
+            <div class="get-subscribed__popup popup__inner">
+                <div class="popup__inner__close-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="close-icon">
+                        <g fill="none" fill-rule="evenodd">
+                            <path fill="#523A84"
+                                d="M7.339 5.4L12 10.059l4.661-4.66a1.375 1.375 0 0 1 1.94 0 1.374 1.374 0 0 1 0 1.939l-4.662 4.659 4.661 4.66A1.374 1.374 0 0 1 17.63 19c-.355 0-.694-.13-.969-.404L12 13.936l-4.661 4.66a1.319 1.319 0 0 1-.97.404c-.355 0-.71-.13-.97-.404a1.374 1.374 0 0 1 0-1.938l4.661-4.661L5.4 7.338a1.374 1.374 0 0 1 0-1.938 1.375 1.375 0 0 1 1.939 0z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="popup__inner__content">
+                    <div>
+                        <img src="img/for-agents.svg" alt="agents">
+                        <h3 class="get-subscribed__popup__title">
+                            Lorem ipsum dolor sit.
+                        </h3>
+                        <p class="get-subscribed__popup__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam impedit iusto facere!
+                        </p>
+                        <form class="auth-email-request__body__form">
+                            <div class="input-with-btn-inline">
+                                <div class="form-input-wrapper">
+                                    <div class="form-input">
+                                        <input class="form-input__input" name="email" type="email"
+                                            placeholder="Email" data-testid="email" value="">
+                                    </div>
+                                </div>
+                                <button class="button-custom full-width-on-mobile filled primary"
+                                    type="submit">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- agent and buyers -->
+
+<footer class="footer">
+    <div class="container">
+        <img class="footer__f-logo" src="img/logo-footer.svg" alt="">
+        <div class="footer__region-wrapper">
+            <div class="region-inner" id="region-inner1">
+                <div class="region-item" id="region-list1">
+                    <p>чүй</p>
+                    <a href="#">аламүдүн</a>
+                    <a href="#">жайыл</a>
+                    <a href="#">кемин</a>
+                    <a href="#">москва</a>
+                    <a href="#">панфилов</a>
+                    <a href="#">сокулук</a>
+                    <a href="#">чүй</a>
+                    <a href="#">ысык-ата</a>
+                    <a href="#">бишкек</a>
+                    <a href="#">токмок</a>
+                    <a href="#">кант</a>
+                    <a href="#">кара-балта</a>
+                    <button class="close-view-btn" id="close-view1">
+                        Скрыть...
+                    </button>
+                </div>
+                <div class="more-btn-wrapper">
+                    <button id="more-btn1" class="view-more-btn" type="button">Еще...</button>
+                </div>
+            </div>
+            <div class="region-inner" id="region-inner2">
+                <div class="region-item" id="region-list2">
+                    <p>талас</p>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <button class="close-view-btn" id="close-view2">
+                        Скрыть...
+                    </button>
+                </div>
+                <div class="more-btn-wrapper">
+                    <button id="more-btn2" class="view-more-btn" type="button">Еще...</button>
+                </div>
+            </div>
+            <div class="region-inner" id="region-inner3">
+                <div class="region-item" id="region-list3">
+                    <p>ысык-көл</p>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <button class="close-view-btn" id="close-view3">
+                        Скрыть...
+                    </button>
+                </div>
+                <div class="more-btn-wrapper">
+                    <button id="more-btn3" class="view-more-btn" type="button">Еще...</button>
+                </div>
+            </div>
+            <div class="region-inner" id="region-inner4">
+                <div class="region-item" id="region-list4">
+                    <p>нарын</p>
+                    <a href="#">ак-талинский район</a>
+                    <a href="#">ат-башы</a>
+                    <a href="#">жумгал</a>
+                    <a href="#">кочкор</a>
+                    <a href="#">нарын</a>
+                    <a href="#">чаек</a>
+                    <a href="#">город нарын</a>
+                    <a href="#">город кочкор</a>
+                    <a href="#">куйручук</a>
+                    <a href="#">миң-куш</a>
+                    <a href="#">жерге-тал</a>
+                    <a href="#">баетов</a>
+                    <button class="close-view-btn" id="close-view4">
+                        Скрыть...
+                    </button>
+                </div>
+                <div class="more-btn-wrapper">
+                    <button id="more-btn4" class="view-more-btn" type="button">Еще...</button>
+                </div>
+            </div>
+            <div class="region-inner" id="region-inner5">
+                <div class="region-item" id="region-list5">
+                    <p>жалал-абад</p>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <button class="close-view-btn" id="close-view5">
+                        Скрыть...
+                    </button>
+                </div>
+                <div class="more-btn-wrapper">
+                    <button id="more-btn5" class="view-more-btn" type="button">Еще...</button>
+                </div>
+            </div>
+            <div class="region-inner" id="region-inner6">
+                <div class="region-item" id="region-list6">
+                    <p>ош</p>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <button class="close-view-btn" id="close-view6">
+                        Скрыть...
+                    </button>
+                </div>
+                <div class="more-btn-wrapper">
+                    <button id="more-btn6" class="view-more-btn" type="button">Еще...</button>
+                </div>
+            </div>
+            <div class="region-inner" id="region-inner7">
+                <div class="region-item" id="region-list7">
+                    <p>баткен</p>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <button class="close-view-btn" id="close-view7">
+                        Скрыть...
+                    </button>
+                </div>
+                <div class="more-btn-wrapper">
+                    <button id="more-btn7" class="view-more-btn" type="button">Еще...</button>
+                </div>
+            </div>
+            <div class="region-inner-mobile" id="region-inner8">
+                <div class="region-item-mobile" id="region-list8">
+                    <p>бишкек</p>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <button class="close-view-btn" id="close-view8">
+                        Скрыть...
+                    </button>
+                </div>
+                <div class="more-btn-wrapper">
+                    <button id="more-btn8" class="view-more-btn" type="button">Еще...</button>
+                </div>
+            </div>
+            <div class="footer-nav-bar">
+                <p>yurtah</p>
+                <a href="#">купить</a>
+                <a href="#">арендовать</a>
+                <a href="#">продать</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer__social-menu">
+            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+                <g fill="none" fill-rule="evenodd">
+                    <path d="M0 0h44v44H0z"></path>
+                    <circle cx="22" cy="22" r="21.5" stroke="#fff"></circle>
+                    <path class="social-icon" fill="#fff"
+                        d="M23.315 35h-4.878V23.499H16v-3.963h2.437v-2.38c0-3.233 1.376-5.156 5.286-5.156h3.255v3.964h-2.034c-1.523 0-1.623.554-1.623 1.588l-.007 1.984H27l-.431 3.963h-3.255V35z">
+                    </path>
+                </g>
+            </svg>
+
+
+            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+                <g fill="none" fill-rule="evenodd">
+                    <path d="M0 0h44v44H0z"></path>
+                    <circle cx="22" cy="22" r="21.5" stroke="#FFF"></circle>
+                    <path class="social-icon" fill="#fff"
+                        d="M30.526 16.846a4.51 4.51 0 001.893-2.513 8.355 8.355 0 01-2.736 1.102A4.194 4.194 0 0026.539 14c-2.38 0-4.307 2.035-4.307 4.544 0 .356.036.703.11 1.034-3.58-.19-6.754-1.996-8.88-4.747a4.724 4.724 0 00-.583 2.285c0 1.576.76 2.967 1.917 3.783a4.154 4.154 0 01-1.953-.568v.056c0 2.202 1.484 4.04 3.458 4.455a4.01 4.01 0 01-1.137.16c-.277 0-.548-.027-.81-.08.548 1.804 2.139 3.12 4.025 3.155-1.476 1.219-3.333 1.944-5.351 1.944A8.31 8.31 0 0112 29.959 11.747 11.747 0 0018.604 32c7.926 0 12.257-6.924 12.257-12.929 0-.197-.002-.394-.01-.587A9.006 9.006 0 0033 16.13a8.257 8.257 0 01-2.474.715z">
+                    </path>
+                </g>
+            </svg>
+
+            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+                <g fill="none" fill-rule="evenodd">
+                    <path d="M0 0h44v44H0z"></path>
+                    <circle cx="22" cy="22" r="21.5" stroke="#FFF"></circle>
+                    <path class="social-icon" fill="#FFF"
+                        d="M22 12.982c2.937 0 3.285.011 4.445.064 1.072.05 1.655.228 2.042.379.514.2.88.438 1.265.823.385.385.624.751.823 1.265.15.387.33.97.379 2.042.053 1.16.064 1.508.064 4.445 0 2.937-.011 3.285-.064 4.445-.05 1.072-.228 1.655-.379 2.043-.2.513-.438.88-.823 1.264a3.408 3.408 0 01-1.265.823c-.387.15-.97.33-2.042.379-1.16.053-1.508.064-4.445.064-2.937 0-3.285-.011-4.445-.064-1.072-.049-1.655-.228-2.042-.379a3.41 3.41 0 01-1.265-.823 3.408 3.408 0 01-.823-1.264c-.15-.388-.33-.97-.379-2.043-.053-1.16-.064-1.508-.064-4.445 0-2.937.011-3.285.064-4.445.049-1.072.228-1.655.379-2.042.2-.514.438-.88.823-1.265a3.408 3.408 0 011.265-.823c.387-.15.97-.33 2.042-.379 1.16-.053 1.508-.064 4.445-.064m1.096-1.981c2.01.003 2.428.019 3.44.065 1.17.054 1.97.24 2.67.512a5.392 5.392 0 011.948 1.268 5.392 5.392 0 011.268 1.949c.272.7.458 1.499.512 2.67.053 1.173.066 1.548.066 4.535s-.013 3.362-.066 4.535c-.054 1.171-.24 1.97-.512 2.67a5.392 5.392 0 01-1.268 1.949 5.392 5.392 0 01-1.949 1.269c-.7.271-1.499.457-2.67.51-1.173.054-1.548.067-4.535.067s-3.362-.013-4.535-.066c-1.171-.054-1.97-.24-2.67-.511a5.392 5.392 0 01-1.949-1.27 5.392 5.392 0 01-1.269-1.948c-.271-.7-.457-1.499-.51-2.67-.047-1.011-.063-1.429-.066-3.439v-2.192c.003-2.01.019-2.428.065-3.44.054-1.17.24-1.97.511-2.67a5.392 5.392 0 011.27-1.948 5.392 5.392 0 011.948-1.268c.7-.272 1.499-.458 2.67-.512.96-.044 1.386-.06 3.15-.065h2.48zm-1.074 5.368a5.653 5.653 0 100 11.306 5.653 5.653 0 000-11.306zm0 1.983a3.67 3.67 0 110 7.34 3.67 3.67 0 010-7.34zm5.827-3.554a1.31 1.31 0 100 2.619 1.31 1.31 0 000-2.62z">
+                    </path>
+                </g>
+            </svg>
+
+            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+                <g fill="none" fill-rule="evenodd">
+                    <path d="M0 0h44v44H0z"></path>
+                    <circle cx="22" cy="22" r="21.5" stroke="#FFF"></circle>
+                    <path class="social-icon" fill="#FFF"
+                        d="M15.926 28.017l.016-4.051.757-.008.757-.01-.01-.624-.009-.624-2.185-.009-2.183-.009v1.266l.739.01.739.008.008 4.018c.004 2.21.015 4.037.024 4.06.012.032.165.04.672.033l.658-.009.017-4.05zm12.604-.285c-.031-.08.011-1.017.053-1.153.095-.319.299-.474.62-.474.266 0 .435.103.549.335.072.147.08.21.09.752l.011.592h-.652c-.561 0-.655-.007-.671-.052zm1.218 4.365c.64-.18 1.082-.618 1.248-1.237.028-.105.06-.406.072-.668l.019-.474h-1.232l-.015.425c-.018.484-.067.65-.243.804-.187.165-.53.177-.753.026-.266-.18-.332-.484-.318-1.472l.01-.7 1.274-.008 1.274-.01-.016-1.041c-.02-1.163-.045-1.339-.24-1.752-.37-.782-1.398-1.176-2.252-.864-.644.236-1.024.66-1.177 1.318-.054.232-.06.44-.06 2.14 0 2.086.007 2.17.22 2.598.378.76 1.327 1.156 2.189.915zm-5.047-1.188a.448.448 0 00.17-.242c.052-.151.056-.344.05-2.133-.008-1.864-.012-1.974-.072-2.096-.154-.312-.543-.342-.899-.069l-.117.089v4.252l.117.089c.263.202.552.244.751.11zm.772 1.2c.193-.056.428-.287.533-.522.202-.452.203-.463.203-3.003 0-2.085-.006-2.342-.058-2.567-.167-.722-.53-1.037-1.143-.991-.342.027-.612.163-.936.477-.14.136-.266.248-.28.248-.013 0-.025-.691-.025-1.534v-1.534H22.57v9.402h1.196v-.317c0-.21.012-.316.037-.316.02 0 .154.11.299.247.465.44.868.56 1.37.41zm-6.367-.03c.239-.09.52-.284.756-.526.109-.111.217-.201.24-.201.033 0 .044.09.044.366v.367h1.196v-6.968h-1.196v5.376l-.258.256c-.204.204-.29.266-.416.3-.214.06-.35.02-.438-.133-.066-.112-.068-.165-.078-2.957l-.008-2.842h-1.195v3.018c0 3.287.003 3.359.187 3.675.2.347.67.455 1.166.269zm5.74-11.734c2.354.052 4.897.162 5.573.239.874.1 1.488.554 1.913 1.415.321.65.423 1.157.554 2.718.102 1.235.127 2.005.108 3.432-.021 1.707-.13 3.21-.292 4.054-.17.893-.574 1.653-1.097 2.065-.403.319-.832.46-1.509.499l-.565.036c-.389.03-2.476.115-3.62.147-1.702.048-4.678.065-6.297.036-.777-.014-1.696-.035-2.044-.048-2.331-.084-3.932-.174-4.251-.239a2.358 2.358 0 01-1.262-.766c-.473-.583-.726-1.291-.848-2.381-.284-2.535-.278-5.49.017-7.935.13-1.072.452-1.846.992-2.386a2.05 2.05 0 011-.582c.856-.22 7.554-.395 11.629-.304zM19.99 10.001l.676.004-.015.109c-.012.088-.474 1.644-.957 3.225l-.257.857-.042.144c-.112.375-.246.821-.3.991l-.097.31-.001 2.677c-.002 1.1-.012 1.188-.057 1.2-.122.034-1.404.018-1.425-.017-.029-.047-.024-2.79.005-3.178.037-.498-.047-.89-.403-1.892a47.609 47.609 0 01-.464-1.4c-1.007-3.214-.954-3.026-.857-3.027a37.837 37.837 0 011.492.008c.006.006.195.696.43 1.568l.048.176.478 1.764c.005.016.156-.54.336-1.234.376-1.458.587-2.262.595-2.269.016-.016.203-.02.815-.016zm6.267 9.616c-.334-.045-.529-.174-.663-.44-.167-.334-.167-.332-.167-3.654v-3.1h1.347l.014 2.857c.015 3.105.011 3.032.196 3.08.17.041.359-.05.593-.29l.225-.23.008-2.709.008-2.709.674-.009.673-.008v7.097l-.092.019c-.11.023-1.13.021-1.213-.003-.05-.013-.058-.06-.058-.337v-.322l-.191.187c-.44.43-.915.63-1.354.57zm-3.392-1.355c.23-.177.232-.192.244-2.187.01-1.55.005-1.814-.042-2.025-.063-.286-.174-.42-.39-.48-.28-.075-.537.085-.627.393-.068.236-.067 3.753.001 3.99.053.178.22.372.343.4a.627.627 0 00.472-.091h-.001zm-.528 1.353c-.603-.073-1.157-.429-1.423-.914-.272-.495-.297-.754-.281-2.932.013-1.687.017-1.793.084-2.035.159-.576.467-.968.944-1.205a1.939 1.939 0 011.98.119c.393.255.632.625.76 1.175.056.243.062.43.062 2.133 0 2.072-.01 2.192-.222 2.64-.203.433-.663.814-1.144.948-.212.058-.58.093-.76.071z">
+                    </path>
+                </g>
+            </svg>
+
+            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+                <g fill="none" fill-rule="evenodd">
+                    <path d="M0 0h44v44H0z"></path>
+                    <circle cx="22" cy="22" r="21.5" stroke="#FFF"></circle>
+                    <path class="social-icon" fill="#FFF"
+                        d="M12.504 18.413h3.899V32h-3.899V18.413zm1.85-1.7h-.028c-1.411 0-2.326-1.038-2.326-2.353 0-1.342.942-2.36 2.381-2.36 1.438 0 2.323 1.015 2.35 2.356 0 1.315-.912 2.358-2.377 2.358zM32 32h-4.42v-7.032c0-1.84-.692-3.095-2.212-3.095-1.163 0-1.81.847-2.11 1.665-.114.292-.096.7-.096 1.11V32h-4.38s.057-12.455 0-13.587h4.38v2.132c.259-.932 1.658-2.263 3.89-2.263 2.771 0 4.948 1.956 4.948 6.163V32z">
+                    </path>
+                </g>
+            </svg>
+
+        </div>
+        <div class="footer__teams-link">
+            <a class="first-link" href="">yurtah tech</a>
+            <a class="last-link" href="">yurtah film</a>
+        </div>
+    </div>
+
+</footer>
+
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

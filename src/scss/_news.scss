@@ -1,0 +1,85 @@
+.latest-news {
+    &__title-wrapper {
+        font-weight: 900;
+        letter-spacing: .5px;
+        text-align: center;
+        color: $font-color;
+
+        .title {
+            font-size: 30px;
+
+            @media (max-width: 425px) {
+                font-size: 24px;
+            }
+        }
+
+        .subtitle-text {
+            font-size: 22px;
+            text-align: center;
+            padding: 0 15px;
+            font-weight: 400;
+        }
+    }
+
+    &__cards-wrapper {
+        max-width: 960px;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 959px) {
+            flex-wrap: wrap;
+            text-align: center;
+        }
+    }
+
+    &__card {
+        text-align: center;
+
+        .card-image {
+            border-radius: 8px;
+            max-height: 165px;
+            max-width: 300px;
+
+            @media screen and (max-width: 959px) {
+                max-width: 280px;
+            }
+        }
+
+        .card-title {
+            font-size: 20px;
+            letter-spacing: .23px;
+            color: $font-color;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 16px;
+            line-height: 1.5;
+            color: $font-color;
+        }
+
+        .card-date {
+            font-size: 12px;
+            line-height: 1.33;
+            color: #94a4ba;
+        }
+    }
+}
+
+.latest-news-btn-wrapper {
+    text-align: center;
+    padding-top: 40px;
+
+    .latest-news-btn {
+        border-radius: 8px;
+        box-shadow: 0 2px 17px 0 rgba(83, 59, 134, .15);
+        background-color: #533b86;
+        font-size: 17px;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-align: center;
+        color: #fff;
+        width: 160px;
+        padding: 10px 60px;
+    }
+}

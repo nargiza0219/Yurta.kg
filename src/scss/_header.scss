@@ -1,0 +1,184 @@
+.header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    box-shadow: 0 1px 2px #E5E5E5;
+    z-index: 10000;
+    &__main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        @media screen and (max-width: 1023px) {
+            padding: 0 30px;
+        }
+        @media screen and (max-width: 425px) {
+            padding: 0 15px;
+        }
+    }
+
+    &__logo {
+        max-width: 100px;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__mobile-logo {
+        width: 30px;
+        height: 28px;
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+    }
+
+    &__nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__link {
+        list-style: none;
+        a {
+            padding: 27px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: capitalize;
+            color: $font-color;
+            line-height: 1.5;
+
+            &:hover {
+                border-bottom: solid 2px $font-color;
+                transition-duration: .1s;
+            }
+        }
+    }
+
+    .active-item {
+        border-bottom: solid 2px $font-color;
+    }
+
+    .join-btn {
+        border: solid 1px $font-color;
+        font-weight: 600;
+        border-radius: 8px;
+        padding: 5px 20px;
+        background-color: #fff;
+        outline: none;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0 0 5px $font-color;
+        }
+    }
+
+    &__burger-btn {
+        @media screen and (max-width: 768px){
+            display: block;
+        }
+    }
+}
+
+.burger-inner {
+    .mobile-menu {
+        position: absolute;
+        width: 100%;
+        padding: 70px 15px 0 15px;
+        background-color: #fff;
+        top: -500%;
+        left: 0;
+        z-index: 9999;
+        .join-btn-wrapper{
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 17px 0;
+            .avatar {
+                margin-right: 15px;
+                max-width: 40px;
+            }
+            .mob-join-btn {
+                color: $font-color;
+                text-transform: capitalize;
+                font-weight: 600;
+                padding: 15px 0;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color:#e5e5e5;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+        .mobile-nav-bar {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            .mobile-link {
+                padding: 10px 0;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                a {
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    color: #637381;
+                }
+            }
+            .home {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 55px 0;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    background-color:#e5e5e5;
+                    bottom: 0;
+                    left: 0;
+                }
+                .home-icon{
+                    margin-right: 10px;
+                }
+            }
+            .sell {
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    background-color:#e5e5e5;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+            .about {
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    background-color:#e5e5e5;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
